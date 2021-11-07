@@ -2,4 +2,10 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@media screen and (max-width: 576px) {
+  header {
+    background-color: brown;
+  }
+}
 /*# sourceMappingURL=style.css.map */
