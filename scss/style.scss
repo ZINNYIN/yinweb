@@ -1,23 +1,7 @@
-body {
-	background-color: aliceblue;
-}
+// 匯入檔案 @import
+@import '01joint.scss';
 
-header {
-	// 寬度 高度 背景顏色 單位像素(px)
-	width: 300px;
-	height: 250px;
-	background-color: blueviolet;
-}
-//  如果有加id，scss就要加#
-#main {
-	// 寬度 高度 背景顏色
-	width: 100px;
-	height: 350px;
-	background-color: darkkhaki;
-}
-footer {
-	// 寬度 高度 背景顏色
-	width: 100px;
-	height: 350px;
-	background-color: green;
+// RWD 利用 媒體判斷來區分顯示裝置尺寸
+// 超小裝置 <576PX  max-width (最小寬度)
+@media screen and (max-width: 576px) {
 }
