@@ -10,7 +10,15 @@ image {
 
 @media screen and (max-width: 576px) {
   header {
-    background-color: brown;
+    width: 100%;
+  }
+  address,
+  #btnbox,
+  .icon {
+    display: none;
+  }
+  #menubtn {
+    background-color: burlywood;
   }
 }
 /*# sourceMappingURL=style.css.map */
