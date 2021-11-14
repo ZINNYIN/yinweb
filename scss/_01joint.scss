@@ -26,3 +26,9 @@ $w10: 10%;
 @mixin DN {
   display: none;
 }
+
+// 開啟隱藏物件
+@mixin ob {
+  //  顯示方式:區塊
+  display: block;
+}

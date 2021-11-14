@@ -16,19 +16,45 @@
 //   background-color: burlywood;
 // }
 
+//目前使用的單位 (數位) 是百分比(%) ; 網頁固定單位--像素px 
 
 header {
   // 寬度100%
   width: $w10 * 10;
-
+  height: 80px;
+  background-color: darkgoldenrod;
   nav {
+    /*
+    浮動對齊的問題float
+    1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
+    2. nav 的父框架 header ，高度消失(展開)
+    解決方式
+    1. nav 的父框架 header ，給予高度: 或是nav 給予高度 
+    2.清除浮動狀態，由nav 設定
+    */
+
+    width: $w10 *10;
+    background-color: cornflowerblue;
+    
+    // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
+
+    // 靠左排列(與menubtn排列)
+    #logo{
+      // 浮點對齊法: 靠左對齊 float:left
+      float: left;
+    }
     .btnbox {
-      // 呼叫混合模式
+      // 呼叫混合函式
       @include DN;
     }
     #icon {
-      // 呼叫混合模式
+      // 呼叫混合函式
       @include DN;
+    }
+    // 靠左排列(與logo排列)
+    #menubtn{
+      // 浮點對齊法: 靠左對齊 float:left
+      float: left;
     }
   }
 }

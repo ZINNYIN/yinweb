@@ -1,0 +1,29 @@
+header {
+    // 寬度100%
+    width: $w10 * 10;
+    background-color:rgb(241, 39, 133);
+    /*
+    大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
+    */
+
+    nav {
+      .btnbox{
+        //   開啟隱藏物件
+        @include ob;
+      }
+      #icon {
+        //   開啟隱藏物件
+        @include ob;
+      }
+      #menubtn{
+          @include DN;
+      }
+    }
+  }
+  
+  footer {
+    address{
+      //呼叫混合函式
+      @include DN;
+    }
+  }

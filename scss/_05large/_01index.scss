@@ -8,10 +8,14 @@ header {
 
     nav {
       .btnbox{
+        //   開啟隱藏物件
+        @include ob;
       }
       #icon {
+        //   開啟隱藏物件
+        @include ob;
       }
-      .imbox{
+      #menubtn{
           @include DN;
       }
     }

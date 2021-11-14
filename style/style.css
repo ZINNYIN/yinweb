@@ -12,12 +12,32 @@ image {
 @media screen and (max-width: 576px) {
   header {
     width: 100%;
+    height: 80px;
+    background-color: darkgoldenrod;
+  }
+  header nav {
+    /*
+    浮動對齊的問題float
+    1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
+    2. nav 的父框架 header ，高度消失(展開)
+    解決方式
+    1. nav 的父框架 header ，給予高度: 或是nav 給予高度 
+    2.清除浮動狀態，由nav 設定
+    */
+    width: 100%;
+    background-color: cornflowerblue;
+  }
+  header nav #logo {
+    float: left;
   }
   header nav .btnbox {
     display: none;
   }
   header nav #icon {
     display: none;
+  }
+  header nav #menubtn {
+    float: left;
   }
 
   footer address {
@@ -64,7 +84,57 @@ image {
     大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
     */
   }
-  header nav .imbox {
+  header nav .btnbox {
+    display: block;
+  }
+  header nav #icon {
+    display: block;
+  }
+  header nav #menubtn {
+    display: none;
+  }
+
+  footer address {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #f12785;
+    /*
+    大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
+    */
+  }
+  header nav .btnbox {
+    display: block;
+  }
+  header nav #icon {
+    display: block;
+  }
+  header nav #menubtn {
+    display: none;
+  }
+
+  footer address {
+    display: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    background-color: #f00625;
+    /*
+    大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
+    */
+  }
+  header nav .btnbox {
+    display: block;
+  }
+  header nav #icon {
+    display: block;
+  }
+  header nav #menubtn {
     display: none;
   }
 
