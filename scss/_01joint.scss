@@ -32,3 +32,9 @@ $w10: 10%;
   //  顯示方式:區塊
   display: block;
 }
+
+// 清除浮動 float
+@mixin clearfloat {
+  // 清除左右浮動
+  clear: both;
+}
