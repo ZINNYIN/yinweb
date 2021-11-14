@@ -35,7 +35,7 @@ header {
 
     width: $w10 *10;
     // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
-    // vh (螢幕可視裝置的高度，計算出實際高度; 依照裝置高度計算)
+    // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
     height: 10vh;
     background-color: deeppink;
     
@@ -45,7 +45,7 @@ header {
     #logo{
       // 浮點對齊法: 靠左對齊 float:left
       float: left;
-      // 寬度or vw (螢幕可是範圍寬度的百分比)
+      // 寬度or vw (螢幕可視範圍寬度的百分比)
       width: $w10*8;
     }
     .btnbox {
