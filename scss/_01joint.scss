@@ -11,5 +11,18 @@ image {
   width: 100%;
   height: auto;
 }
-
+// 變數區
 $w10: 10%;
+// 繼承區(相同模式) ;將SCSS 的繼承功能，寫在共用檔內，因為位置編排有誤，故造成編譯時出錯
+
+
+
+%DN{
+  // 隱藏
+  display:none ;
+}
+
+// 撰寫 scss 的 混合模式 mixin ，修正scss的繼承功能，無法被@media 使用的問題
+@mixin DN {
+  display: none;
+}

@@ -15,23 +15,27 @@
 // #menubtn {
 //   background-color: burlywood;
 // }
+
+
 header {
   // 寬度100%
-  wudth: $w10 * 10;
+  width: $w10 * 10;
 
   nav {
     .btnbox {
-      // 隱藏
-      display: none;
+      // 呼叫混合模式
+      @include DN;
     }
     #icon {
-      // 隱藏
-      display: none;
+      // 呼叫混合模式
+      @include DN;
     }
   }
 }
 
 footer {
-  // 隱藏
-  display: none;
+  address{
+    //呼叫混合模式
+    @include DN;
+  }
 }

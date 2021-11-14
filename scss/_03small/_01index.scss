@@ -1,0 +1,22 @@
+header {
+    // 寬度100%
+    width: $w10 * 10;
+    background-color:brown;
+    nav {
+      .btnbox {
+        // 呼叫混合函式
+        @include DN;
+      }
+      #icon {
+        // 呼叫混合函式
+        @include DN;
+      }
+    }
+  }
+  
+  footer {
+    address{
+      //呼叫混合函式
+      @include DN;
+    }
+  }

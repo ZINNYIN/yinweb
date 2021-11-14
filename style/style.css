@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0 auto;
   padding: 0;
@@ -12,13 +13,62 @@ image {
   header {
     width: 100%;
   }
-  address,
-  #btnbox,
-  .icon {
+  header nav .btnbox {
     display: none;
   }
-  #menubtn {
-    background-color: burlywood;
+  header nav #icon {
+    display: none;
+  }
+
+  footer address {
+    display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 576px) {
+  header {
+    width: 100%;
+    background-color: brown;
+  }
+  header nav .btnbox {
+    display: none;
+  }
+  header nav #icon {
+    display: none;
+  }
+
+  footer address {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    background-color: chartreuse;
+  }
+  header nav .btnbox {
+    display: none;
+  }
+  header nav #icon {
+    display: none;
+  }
+
+  footer address {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    background-color: #adb0db;
+    /*
+    大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
+    */
+  }
+  header nav .imbox {
+    display: none;
+  }
+
+  footer address {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
