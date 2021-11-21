@@ -13,14 +13,15 @@ header {
         // 換行
         flex-wrap: wrap;
 
+        @include LIW(7, 5vw);
+
         // logo寬度+icon寬度= 總寬度 100vw (100%)
         #logo {
-            width: $w10 * 7;
         }
         #icon {
             //   開啟隱藏物件
             @include ob;
-            width: $w10 * 3;
+
             // 隱藏項目符號
             @include DNli;
 

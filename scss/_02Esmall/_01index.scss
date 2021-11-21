@@ -36,7 +36,6 @@ header {
         width: $w10 * 10;
         // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
         // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
-        height: 10vh;
         background-color: deeppink;
 
         // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
