@@ -43,10 +43,13 @@ header {
         // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
         // 靠左排列(與menubtn排列)
         #logo {
+            // 寬度 % 或 vw（螢幕可式的百分範圍寬度比）
+            // width: $W10 * 8 + 5%;
+
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
-            // 寬度or vw (螢幕可視範圍寬度的百分比)
-            width: $w10 * 8;
+
+            background-color: rgb(183, 0, 255);
         }
         #icon {
             // 呼叫混合函式
@@ -62,7 +65,7 @@ header {
         #menubtn {
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
-            width: $w10 * 2;
+            width: $w10 * 1+5vw;
         }
         .clear {
             @include clearfloat;

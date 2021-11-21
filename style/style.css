@@ -28,6 +28,12 @@ image {
     background-color: deeppink;
   }
   header nav #logo {
+    width: 85vw;
+  }
+  header nav .btnbox {
+    width: 15vw;
+  }
+  header nav #logo {
     float: left;
     background-color: antiquewhite;
   }
@@ -74,8 +80,13 @@ image {
     background-color: #adff14;
   }
   header nav #logo {
+    width: 85vw;
+  }
+  header nav .btnbox {
+    width: 15vw;
+  }
+  header nav #logo {
     float: left;
-    width: 80vw;
     background-color: aqua;
   }
   header nav #icon {
@@ -86,7 +97,7 @@ image {
   }
   header nav #menubtn {
     float: left;
-    width: 20vw;
+    width: 15vw;
   }
   header nav .clear {
     clear: both;
@@ -116,7 +127,7 @@ image {
   }
   header nav #logo {
     float: left;
-    width: 80vw;
+    background-color: #b700ff;
   }
   header nav #icon {
     display: none;
@@ -126,7 +137,7 @@ image {
   }
   header nav #menubtn {
     float: left;
-    width: 20vw;
+    width: 15vw;
   }
   header nav .clear {
     clear: both;
@@ -156,10 +167,17 @@ image {
     display: block;
     width: 30vw;
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav .btnbox {
     display: block;
     width: 100vw;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav .btnbox ul {
     display: none;
@@ -176,18 +194,6 @@ image {
   header {
     width: 100vw;
     background-color: #f12785;
-    /*
-    大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
-    */
-  }
-  header nav #icon {
-    display: block;
-  }
-  header nav .btnbox {
-    display: block;
-  }
-  header nav #menubtn {
-    display: none;
   }
   footer address {
     display: none;
@@ -201,15 +207,6 @@ image {
     /*
     大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸
     */
-  }
-  header nav .btnbox {
-    display: block;
-  }
-  header nav #icon {
-    display: block;
-  }
-  header nav #menubtn {
-    display: none;
   }
   footer address {
     display: none;

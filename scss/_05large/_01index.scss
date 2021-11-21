@@ -22,12 +22,19 @@ header {
             @include ob;
             width: $w10 * 3;
             // 隱藏項目符號
-            list-style-type: none;
+            @include DNli;
+
+            // 彈性佈局
+            display: flex;
         }
         .btnbox {
             //   開啟隱藏物件
             @include ob;
             width: $w10 * 10;
+            // 隱藏項目符號
+            @include DNli;
+            // 彈性佈局
+            display: flex;
 
             // 隱藏 第二層選單
             ul {

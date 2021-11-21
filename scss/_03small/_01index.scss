@@ -42,11 +42,18 @@ header {
         // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
         // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
         // 靠左排列(與menubtn排列)
+
+        // 單位不同無法計算，所以將原本5%，改成同一單位 vw
+        // 引入的程式，執行結果為 logo 與 btnbox 的寬度，所以要寫在父框架(nav)
+        @include LBW(8, 5vw);
+
         #logo {
+            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
+            // width: $W10 * 8 + 5%;
+
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
-            // 寬度or vw (螢幕可視範圍寬度的百分比)
-            width: $w10 * 8;
+
             background-color: aqua;
         }
         #icon {
@@ -63,7 +70,7 @@ header {
         #menubtn {
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
-            width: $w10 * 2;
+            width: $w10 * 1+5vw;
         }
         .clear {
             @include clearfloat;
