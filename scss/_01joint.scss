@@ -1,40 +1,63 @@
 // 頁面(瀏覽器)與物件的間距:外間距--上下為0，左右自動;內間距上下左右為0;設定在 * 總管
 * {
-  // 外間距--上下為0。左右自動 margin
-  margin: 0 auto;
-  // 內間距上下左右為0  padding
-  padding: 0;
+    // 外間距--上下為0。左右自動 margin
+    margin: 0 auto;
+    // 內間距上下左右為0  padding
+    padding: 0;
 }
 // 圖片等比控制
 image {
-  // 寬度為100%  高度自動
-  width: 100%;
-  height: auto;
+    // 寬度為100%  高度自動
+    width: 100%;
+    height: auto;
 }
 // 變數區
-$w10: 10%;
+$w10: 10vw;
 // 繼承區(相同模式) ;將SCSS 的繼承功能，寫在共用檔內，因為位置編排有誤，故造成編譯時出錯
 
+%DN {
+    // 隱藏
+    display: none;
+}
 
+// 計算區
+// 計算 header Logo 與 MenaBtn 之間的寬度 手機裝置
+@mixin LBW($wM, $wA) {
+    // 計算區 1.設變數(承仔值的物件名稱) $wM=倍數 $wA=加的數值
+    $logow: $w10 * $wM + $wA;
+    // menubtn寬度 = 父框架的總寬度(100)-logo寬度(85)
+    $MWB: $w10 * 10 -$logow;
 
-%DN{
-  // 隱藏
-  display:none ;
+    // 連動 計算寬度 logo與 menubtn
+
+    // 呼叫 id (標籤或 id class)
+    #logo {
+        // 寬度
+        width: $logow;
+    }
+    .btnbox {
+        // 寬度
+        width: $MWB;
+    }
 }
 
 // 撰寫 scss 的 混合模式 mixin ，修正scss的繼承功能，無法被@media 使用的問題
 @mixin DN {
-  display: none;
+    display: none;
 }
 
 // 開啟隱藏物件
 @mixin ob {
-  //  顯示方式:區塊
-  display: block;
+    //  顯示方式:區塊
+    display: block;
 }
 
 // 清除浮動 float
 @mixin clearfloat {
-  // 清除左右浮動
-  clear: both;
+    // 清除左右浮動
+    clear: both;
+}
+// 隱藏項目符號
+@mixin DNli {
+    list-style-type: none;
 }

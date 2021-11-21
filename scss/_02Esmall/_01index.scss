@@ -16,15 +16,15 @@
 //   background-color: burlywood;
 // }
 
-//目前使用的單位 (數位) 是百分比(%) ; 網頁固定單位--像素px 
+//目前使用的單位 (數位) 是百分比(%) ; 網頁固定單位--像素px
 
 header {
-  // 寬度100%
-  width: $w10 * 10;
-  
-  background-color: darkgoldenrod;
-  nav {
-    /*
+    // 寬度100%
+    width: $w10 * 10;
+
+    background-color: darkgoldenrod;
+    nav {
+        /*
     浮動對齊的問題float
     1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
     2. nav 的父框架 header ，高度消失(展開)
@@ -33,44 +33,53 @@ header {
     2.清除浮動狀態，由nav 設定
     */
 
-    width: $w10 *10;
-    // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
-    // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
-    height: 10vh;
-    background-color: deeppink;
-    
-    // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
-    // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
-    // 靠左排列(與menubtn排列)
-    #logo{
-      // 浮點對齊法: 靠左對齊 float:left
-      float: left;
-      // 寬度or vw (螢幕可視範圍寬度的百分比)
-      width: $w10*8;
+        width: $w10 * 10;
+        // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
+        // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
+        height: 10vh;
+        background-color: deeppink;
+
+        // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
+        // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
+        // 靠左排列(與menubtn排列)
+        #logo {
+            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
+            // width: $W10 * 8 + 5%;
+            // 單位不同無法計算，所以將原本5%，改成同一單位 vw
+            @include LBW(8, 5vw);
+
+            // 浮點對齊法: 靠左對齊 float:left
+            float: left;
+
+            background-color: antiquewhite;
+        }
+        #icon {
+            // 呼叫混合函式
+            @include DN;
+        }
+        .btnbox {
+            // 呼叫混合函式
+            @include DN;
+        }
+
+        // 靠左排列(與logo排列)
+        #menubtn {
+            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
+            // 單位不同無法計算，所以將原本5%，改成同一單位 vw
+            width: $w10 * 1 + 5vw;
+
+            // 浮點對齊法：靠左對齊 float:left
+            float: left;
+        }
+        .clear {
+            @include clearfloat;
+        }
     }
-    .btnbox {
-      // 呼叫混合函式
-      @include DN;
-    }
-    #icon {
-      // 呼叫混合函式
-      @include DN;
-    }
-    // 靠左排列(與logo排列)
-    #menubtn{
-      // 浮點對齊法: 靠左對齊 float:left
-      float: left;
-      width: $w10 * 2;
-    }
-    .clear{
-      @include clearfloat;
-    }
-  }
 }
 
 footer {
-  address{
-    //呼叫混合模式
-    @include DN;
-  }
+    address {
+        //呼叫混合模式
+        @include DN;
+    }
 }
