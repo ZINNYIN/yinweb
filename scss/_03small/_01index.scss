@@ -78,6 +78,34 @@ header {
 }
 
 footer {
+    // 物件之間的間距值 vh rem
+    margin-top: 2rem;
+
+    hr {
+        margin-bottom: 2rem;
+    }
+
+    // 手機版次導覽
+    nav {
+        ul {
+            width: 80%;
+            // 彈性佈局
+            display: flex;
+            // 隱藏項目符號
+            @include DNli;
+        }
+    }
+
+    // 版權宣告
+    p {
+        // 文字置中
+        text-align: center;
+        // 與上方距離
+        margin-top: 2rem;
+        // 與底部距離
+        margin-bottom: 0.7rem;
+    }
+
     address {
         //呼叫混合模式
         @include DN;
