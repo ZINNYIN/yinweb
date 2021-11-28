@@ -7,9 +7,28 @@
         position: relative;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
-        .leftbtn,
+        .btn{
+            width: 30px;
+            height: 6vh *2;
+            // 水平置中
+            text-align: center;
+            // 垂直置中 高度 = 行距
+            line-height: 6vh*2;
+            font-size: $trem*2;
+            // 定位點
+            position: absolute;
+            // 移動階層(圖層)
+            z-index: 5;
+            top: 20vh-6vh;
+        }
+        .leftbtn{
+            left: 2.5vw;
+            background-color: lightcoral;
+        }
         .rightbtn{
-            @include DN;
+            // 方向 右邊為0(物件靠右對齊) ; float 浮動對齊，配合 上下左右 方向推動
+            right: 2.5vw;
+            background-color: rgb(235, 74, 74);
         }
         #imbox{
             width: $w10 * 10;
@@ -32,7 +51,7 @@
             }
             .item01{
                 // 背景圖片
-                background-image: url(../../image/001.jpg);
+                background-image: url(../../image/005.jpg);
                 // 不重覆
                 background-repeat: no-repeat;
                 // 背景圖片 置中對齊

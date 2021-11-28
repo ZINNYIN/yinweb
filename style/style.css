@@ -9,6 +9,10 @@ img {
   height: auto;
 }
 
+/*
+文字尺寸 單位 px(固定值) em(百分比，會疊加父框架設定的值)  rem (百分比，不會疊加父框架設定的值）
+em 基礎為 1em=16px ; rem基礎為 1rem=16px
+*/
 @media screen and (max-width: 576px) {
   header {
     width: 100vw;
@@ -84,9 +88,23 @@ img {
     position: relative;
     overflow: hidden;
   }
-  #main #banner .leftbtn,
+  #main #banner .btn {
+    width: 30px;
+    height: 12vh;
+    text-align: center;
+    line-height: 12vh;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 5;
+    top: 14vh;
+  }
+  #main #banner .leftbtn {
+    left: 2.5vw;
+    background-color: lightcoral;
+  }
   #main #banner .rightbtn {
-    display: none;
+    right: 2.5vw;
+    background-color: #eb4a4a;
   }
   #main #banner #imbox {
     width: 100vw;
@@ -103,7 +121,7 @@ img {
     padding-bottom: 26vh;
   }
   #main #banner #imbox .item01 {
-    background-image: url(../../image/001.jpg);
+    background-image: url(../../image/005.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
