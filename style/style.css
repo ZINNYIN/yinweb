@@ -81,6 +81,7 @@ img {
   }
   #main #banner {
     width: 100vw;
+    position: relative;
     overflow: hidden;
   }
   #main #banner .leftbtn,
@@ -88,13 +89,24 @@ img {
     display: none;
   }
   #main #banner #imbox {
-    width: 300vw;
+    width: 100vw;
     list-style-type: none;
+    padding-bottom: 40vh;
+    background-color: khaki;
   }
   #main #banner #imbox li {
-    width: 300vw;
+    width: 100vw;
     float: left;
     position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 26vh;
+  }
+  #main #banner #imbox .item01 {
+    background-image: url(../../image/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
