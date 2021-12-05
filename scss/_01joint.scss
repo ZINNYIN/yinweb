@@ -105,3 +105,8 @@ $trem: 1rem;
     // 背景圖片
     background-image: url(../../image/#{$Material}/#{$Image});
 }
+// 圓角矩形
+@mixin rounded($Num) {
+    // 邊框角度設定，建議單位為 像素
+    border-radius: $Num + px;
+}

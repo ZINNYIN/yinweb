@@ -1,5 +1,5 @@
 #main {
-    background-color: burlywood;
+    background-color: rgb(224, 134, 15);
 
     #banner {
         width: $w10 * 10;
@@ -35,8 +35,8 @@
             width: $w10 * 10;
             @include DNli;
             // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh
-            padding-bottom: 350vh;
-            background-color: rgb(115, 170, 110);
+            padding-bottom: 38vh;
+            background-color: rgb(224, 99, 27);
             li {
                 width: $w10 * 10;
                 float: left;
@@ -47,26 +47,26 @@
                 // margin-left: -330px;
                 font-size: 72px;
                 text-align: center;
-                // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh (會隨著裝置而改變) 800px*0.26=208px ;固定值 px
-                padding-bottom: 250vh;
+                // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh
+                padding-bottom: 26vh;
             }
             .item01 {
-                @include BPhoto(center, cover, Banner, "005.jpg");
+                @include BPhoto(center, cover, banner, "005.jpg");
             }
             .item02 {
                 // 英文字和數字前，數字被判讀為「文字」; 數字在英文字底線 ( _ )前，數字被為數字， 「0」為開頭 ，scss會自動刪除
                 // 數字要變為文字，需轉換為「字串」，字串用雙引號包覆
 
-                @include BPhoto(center, cover, Banner, "004.jpg");
+                @include BPhoto(center, cover, banner, "004.jpg");
             }
             .item03 {
-                @include BPhoto(center, cover, Banner, "003.jpg");
+                @include BPhoto(center, cover, banner, "003.jpg");
             }
             .item04 {
-                @include BPhoto(center, cover, Banner, "002.jpg");
+                @include BPhoto(center, cover, banner, "002.jpg");
             }
             .item05 {
-                @include BPhoto(center, cover, Banner, "001.jpg");
+                @include BPhoto(center, cover, banner, "001.jpg");
             }
         }
     }
