@@ -33,49 +33,54 @@ header {
     2.清除浮動狀態，由nav 設定
     */
 
-    width: $w10 * 10;
-    // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
-    // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
-    background-color: deeppink;
+        width: $w10 * 10;
+        // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
+        // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
+        background-color: deeppink;
 
-    // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
-    // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
-    // 靠左排列(與menubtn排列)
+        // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
+        // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
+        // 靠左排列(與menubtn排列)
 
-    // 單位不同無法計算，所以將原本5%，改成同一單位 vw
-    // 引入的程式，執行結果為 logo 與 btnbox 的寬度，所以要寫在父框架(nav)
-    @include LBW(8, 5vw);
-
-    #logo {
-        // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
-        // width: $W10 * 8 + 5%;
+        // 單位不同無法計算，所以將原本5%，改成同一單位 vw
+        // 引入的程式，執行結果為 logo 與 btnbox 的寬度，所以要寫在父框架(nav)
         @include LBW(8, 5vw);
 
-        // 浮點對齊法: 靠左對齊 float:left
-        float: left;
-        background-color: antiquewhite;
-    }
-    #icon {
-        // 呼叫混合函式
-        @include DN;
-    }
-    .btnbox {
-        // 呼叫混合函式
-        @include DN;
-    }
+        #logo {
+            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
+            // width: $W10 * 8 + 5%;
+            @include LBW(8, 5vw);
 
-    // 靠左排列(與logo排列)
-    #menubtn {
-        // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
-        // 單位不同無法計算，所以將原本5%，改成同一單位 vw
-        width: $w10 * 1 + 5vw;
+            // 浮點對齊法: 靠左對齊 float:left
+            float: left;
+            background-color: antiquewhite;
+        }
+        #icon {
+            // 呼叫混合函式
+            @include DN;
+        }
+        .btnbox {
+            // 呼叫混合函式
+            @include DN;
+        }
 
-        // 浮點對齊法：靠左對齊 float:left
-        float: left;
-    }
-    .clear {
-        @include clearfloat;
-    }
+        // 靠左排列(與logo排列)
+        #menubtn {
+            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
+            // 單位不同無法計算，所以將原本5%，改成同一單位 vw
+            width: $w10 * 1 + 5vw;
+
+            // 浮點對齊法：靠左對齊 float:left
+            float: left;
+            // 固定圖片的高度，讓首頁的高度不隨著裝置高度而變動
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .clear {
+            @include clearfloat;
+        }
     }
 }
 

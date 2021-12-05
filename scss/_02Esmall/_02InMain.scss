@@ -7,19 +7,24 @@
         position: relative;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
+        $imgpadding: 335px;
+        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $differ
+        $differ: 85px;
+
         .btn {
             width: 20px;
-            height: 6vh * 2;
+            height: 95px;
             // 水平置中
             text-align: center;
             // 垂直置中 高度 = 行距
-            line-height: 6vh * 2;
-            font-size: $trem * 1.1;
+            line-height: 95px;
+            font-size: $trem * 1.2;
             // 定位點
             position: absolute;
             // 移動階層(圖層)
             z-index: 5;
-            top: 20vh-6vh;
+            // 左右按鈕，物件往下推算高度: (物件的父框架的高/2)-(按鈕高度/2)+單位
+            top: ($imgpadding / 2) - (95 / 2);
             @include rounded(15);
         }
         .leftbtn {
@@ -35,7 +40,7 @@
             width: $w10 * 10;
             @include DNli;
             // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh
-            padding-bottom: 350vh;
+            padding-bottom: $imgpadding;
             background-color: rgb(115, 170, 110);
             li {
                 width: $w10 * 10;
@@ -48,25 +53,26 @@
                 font-size: 72px;
                 text-align: center;
                 // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh (會隨著裝置而改變) 800px*0.26=208px ;固定值 px
-                padding-bottom: 250vh;
+                // 子框架的padding = 父框架的padding - 相差值 $differ
+                padding-bottom: $imgpadding - $differ;
             }
             .item01 {
-                @include BPhoto(center, cover, Banner, "005.jpg");
+                @include BPhoto(center, cover, banner, "005.jpg");
             }
             .item02 {
                 // 英文字和數字前，數字被判讀為「文字」; 數字在英文字底線 ( _ )前，數字被為數字， 「0」為開頭 ，scss會自動刪除
                 // 數字要變為文字，需轉換為「字串」，字串用雙引號包覆
 
-                @include BPhoto(center, cover, Banner, "004.jpg");
+                @include BPhoto(center, cover, banner, "004.jpg");
             }
             .item03 {
-                @include BPhoto(center, cover, Banner, "003.jpg");
+                @include BPhoto(center, cover, banner, "003.jpg");
             }
             .item04 {
-                @include BPhoto(center, cover, Banner, "002.jpg");
+                @include BPhoto(center, cover, banner, "002.jpg");
             }
             .item05 {
-                @include BPhoto(center, cover, Banner, "001.jpg");
+                @include BPhoto(center, cover, banner, "001.jpg");
             }
         }
     }
