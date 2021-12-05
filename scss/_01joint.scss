@@ -42,32 +42,28 @@ $trem: 1rem;
         // 寬度
         width: $logow;
     }
-    .btnbox {
+    #menubtn {
         // 寬度
         width: $MWB;
     }
 }
 
-// 計算區
-// 計算 header Logo 與 icon 之間的寬度 手機裝置
 @mixin LIW($wM, $wA) {
     // 計算區 1.設變數(承仔值的物件名稱) $wM=倍數 $wA=加的數值
     $logow: $w10 * $wM + $wA;
     // menubtn寬度 = 父框架的總寬度(100)-logo寬度(85)
-    $iconw: $w10 * 10 -$logow;
+    // $iconw: $w10 * 10 -$logow;
 
     // 連動 計算寬度 logo與 icon
 
     // 呼叫 id (標籤或 id class)
-    #logo {
-        // 寬度
-        width: $logow;
-    }
-    #icon {
-        // 寬度
-        width: $iconw;
-    }
+    // #logo {
+    // 寬度
+    width: $logow;
 }
+// #icon {
+// 寬度
+// width: $iconw;
 
 // 撰寫 scss 的 混合模式 mixin ，修正scss的繼承功能，無法被@media 使用的問題
 @mixin DN {
@@ -94,7 +90,23 @@ $trem: 1rem;
     // 變數設定1.對齊Position 2.尺寸Size 3.資料夾位置Material  ; 圖片Image
     // 問題: 路徑無法直接讀取變數名稱
     // 解答: SCSS提供的語法，插值寫法(基於 Javascript 的es6語法)， #{ 自訂名稱(只能英文和數字)} ，例如: #{ $Image}，寫在路徑上
-    with: $w10 * 10;
+    width: $w10 * 10;
+
+    // 不重覆
+    background-repeat: no-repeat;
+    // 背景圖片 置中對齊
+    background-position: $PosiTion;
+    // 背景圖片尺寸
+    background-size: $Size;
+    // 背景圖片
+    background-image: url(../../image/#{$Material}/#{$Image});
+}
+
+// 手機版選單
+@mixin PoneMenu($PosiTion, $Size, $Material, $Image) {
+    // 變數設定1.對齊Position 2.尺寸Size 3.資料夾位置Material  ; 圖片Image
+    // 問題: 路徑無法直接讀取變數名稱
+    // 解答: SCSS提供的語法，插值寫法(基於 Javascript 的es6語法)， #{ 自訂名稱(只能英文和數字)} ，例如: #{ $Image}，寫在路徑上
 
     // 不重覆
     background-repeat: no-repeat;

@@ -33,18 +33,12 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   header nav #logo {
     width: 85vw;
   }
-  header nav .btnbox {
+  header nav #menubtn {
     width: 15vw;
   }
   header nav #logo {
     float: left;
     background-color: antiquewhite;
-  }
-  header nav #logo #logo {
-    width: 85vw;
-  }
-  header nav #logo .btnbox {
-    width: 15vw;
   }
   header nav #icon {
     display: none;
@@ -53,12 +47,14 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: none;
   }
   header nav #menubtn {
-    width: 15vw;
+    height: 60px;
     float: left;
-  }
-  header nav #menubtn img {
-    width: 50px;
-    height: 50px;
+    background-color: salmon;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../image/icon/menu.svg);
   }
   header nav .clear {
     clear: both;
@@ -126,35 +122,35 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-bottom: 250px;
   }
   #main #banner #imbox .item01 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/005.jpg);
   }
   #main #banner #imbox .item02 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/004.jpg);
   }
   #main #banner #imbox .item03 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/003.jpg);
   }
   #main #banner #imbox .item04 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/002.jpg);
   }
   #main #banner #imbox .item05 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -181,7 +177,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   header nav #logo {
     width: 85vw;
   }
-  header nav .btnbox {
+  header nav #menubtn {
     width: 15vw;
   }
   header nav #logo {
@@ -264,35 +260,35 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-bottom: 295px;
   }
   #main #banner #imbox .item01 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/005.jpg);
   }
   #main #banner #imbox .item02 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/004.jpg);
   }
   #main #banner #imbox .item03 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/003.jpg);
   }
   #main #banner #imbox .item04 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../../image/banner/002.jpg);
   }
   #main #banner #imbox .item05 {
-    with: 100vw;
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -351,12 +347,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flax;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  header nav #logo {
     width: 75vw;
-  }
-  header nav #icon {
-    width: 25vw;
   }
   header nav #icon {
     display: block;

@@ -21,7 +21,6 @@
 header {
     // 寬度100%
     width: $w10 * 10;
-
     background-color: darkgoldenrod;
     nav {
         /*
@@ -34,6 +33,7 @@ header {
     */
 
         width: $w10 * 10;
+
         // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
         // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
         background-color: deeppink;
@@ -49,7 +49,6 @@ header {
         #logo {
             // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
             // width: $W10 * 8 + 5%;
-            @include LBW(8, 5vw);
 
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
@@ -66,18 +65,15 @@ header {
 
         // 靠左排列(與logo排列)
         #menubtn {
-            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
-            // 單位不同無法計算，所以將原本5%，改成同一單位 vw
-            width: $w10 * 1 + 5vw;
-
+            height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            // 固定圖片的高度，讓首頁的高度不隨著裝置高度而變動
-            img {
-                width: 50px;
-                height: 50px;
-            }
+            background-color: salmon;
+            // 文字取代圖片，呈現背景圖，而隱藏文字;首行縮排
+            text-indent: -9999px;
+            @include PoneMenu(center, contain, icon, "menu.svg");
         }
+
         .clear {
             @include clearfloat;
         }
