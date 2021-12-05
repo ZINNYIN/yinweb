@@ -17,7 +17,7 @@ $w10: 10vw;
 /*
 文字尺寸 單位 px(固定值) em(百分比，會疊加父框架設定的值)  rem (百分比，不會疊加父框架設定的值）
 em 基礎為 1em=16px ; rem基礎為 1rem=16px
-*/ 
+*/
 $trem: 1rem;
 
 // 繼承區(相同模式) ;將SCSS 的繼承功能，寫在共用檔內，因為位置編排有誤，故造成編譯時出錯
@@ -88,4 +88,20 @@ $trem: 1rem;
 // 隱藏項目符號
 @mixin DNli {
     list-style-type: none;
+}
+//商業 廣告背景圖片語法
+@mixin BPhoto($PosiTion, $Size, $Material, $Image) {
+    // 變數設定1.對齊Position 2.尺寸Size 3.資料夾位置Material  ; 圖片Image
+    // 問題: 路徑無法直接讀取變數名稱
+    // 解答: SCSS提供的語法，插值寫法(基於 Javascript 的es6語法)， #{ 自訂名稱(只能英文和數字)} ，例如: #{ $Image}，寫在路徑上
+    with: $w10 * 10;
+
+    // 不重覆
+    background-repeat: no-repeat;
+    // 背景圖片 置中對齊
+    background-position: $PosiTion;
+    // 背景圖片尺寸
+    background-size: $Size;
+    // 背景圖片
+    background-image: url(../../image/#{$Material}/#{$Image});
 }
