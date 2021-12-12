@@ -16,18 +16,20 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
 @media screen and (max-width: 576px) {
   header {
     width: 100vw;
-    background-color: darkgoldenrod;
+    background-color: violet;
   }
   header nav {
     /*
-    浮動對齊的問題float
-    1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
-    2. nav 的父框架 header ，高度消失(展開)
-    解決方式
-    1. nav 的父框架 header ，給予高度: 或是nav 給予高度 
-    2.清除浮動狀態，由nav 設定
-    */
-    background-color: deeppink;
+        浮動對齊的問題float
+        1、#logo與.btnbox物件的父框架nav.無寬度
+        2、nav的父框架 header ，高度消失(展開)
+        解決方式
+        1、nav 的父框架 header，給予高度；或是nav給予高度
+        2、清除浮動狀態，由nav設定
+        3、利用圖片高度撐開父框架的高
+        */
+    width: 100vw;
+    background-color: #f1692a;
   }
   header nav #logo {
     width: 85vw;
@@ -37,9 +39,9 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   header nav #logo {
     float: left;
-    background-color: antiquewhite;
+    background-color: brown;
   }
-  header nav #icon {
+  header nav #iconbox {
     display: none;
   }
   header nav .btnbox {
@@ -48,12 +50,12 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   header nav #menubtn {
     height: 60px;
     float: left;
-    background-color: salmon;
+    background-color: aquamarine;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../../image/icon/menu.svg);
+    background-image: url(../../image/icon/menubtn.png);
   }
   header nav .clear {
     clear: both;
@@ -64,16 +66,19 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   footer hr {
     margin-bottom: 2rem;
   }
+  footer nav {
+    margin-bottom: 2rem;
+  }
   footer nav ul {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
+    background-color: thistle;
   }
   footer p {
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 0.7rem;
   }
   footer address {
@@ -180,16 +185,30 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style-type: none;
-    background-color: chartreuse;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   #main > #limited > .lcommodity > #titlebox > .title {
     width: 70%;
+    font-size: 1.7rem;
   }
-  #main > #limited > .lcommodity > #titlebox .number {
+  #main > #limited > .lcommodity > #titlebox > .number {
     width: 30%;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-top: 0.6rem;
   }
   #main > #limited > .lcommodity > #titlebox .text {
     width: 100%;
+    text-align: right;
+  }
+  #main > #limited > .lcommodity > .images {
+    width: 95%;
+    height: 230px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #db963b;
   }
 }
 
@@ -382,7 +401,12 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flax;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  header nav #logo {
     width: 75vw;
+  }
+  header nav #menubtn {
+    width: 25vw;
   }
   header nav #icon {
     display: block;

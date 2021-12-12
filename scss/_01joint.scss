@@ -56,18 +56,20 @@ $trem: 1rem;
     // 計算區 1.設變數(承仔值的物件名稱) $wM=倍數 $wA=加的數值
     $logow: $w10 * $wM + $wA;
     // menubtn寬度 = 父框架的總寬度(100)-logo寬度(85)
-    // $iconw: $w10 * 10 -$logow;
+    $MBW:$w10 * 10-$logow;
 
     // 連動 計算寬度 logo與 icon
 
     // 呼叫 id (標籤或 id class)
-    // #logo {
+    #logo {
     // 寬度
     width: $logow;
 }
-// #icon {
-// 寬度
-// width: $iconw;
+    #menubtn {
+    // 寬度
+    width: $MBW;
+    }
+}
 
 // 撰寫 scss 的 混合模式 mixin ，修正scss的繼承功能，無法被@media 使用的問題
 @mixin DN {
