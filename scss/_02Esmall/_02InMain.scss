@@ -91,9 +91,46 @@
 
         >.lcommodity{
             // 寬度
-            width: $w10*8;
+            width: $w10 * 8;
             // 背景顏色
             background-color: aliceblue;
+            // 外間距
+            margin: {
+                bottom: 20px;
+            }
+            >.lname{
+                >ul{
+                    >li{
+                        background-color: rgb(240, 190, 126);
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
+                }
+            }
+            >#titlebox {
+                // 寬度
+                width: $w1p * 8.5;
+                // 彈性佈局
+                display: flex;
+                // 換行
+                flex-wrap: wrap;
+                // 隱藏項目符號
+                list-style-type: none;
+                background-color: chartreuse;
+                // 計算試
+                $tw:$w1p * 7;
+                $nw:$w1p * 10-$tw;
+                >.title {
+                    width: $tw ;
+                }
+                .number{
+                    width: $nw;
+                }
+                .text{
+                    width: $w1p *10 ;
+                }
+            }
+
         }
 
     }

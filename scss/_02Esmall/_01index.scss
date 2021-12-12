@@ -1,117 +1,104 @@
-// 呼叫html 標籤 ，例如:nav，稱作 類型選擇
-//呼叫 Id ，例如 <li id="text"></li> ，id="text" ， 「#」 id選擇器 ; #text
-// 呼叫class ，class="text1" ，  .類別選擇器 ; .text
-// 後代選擇器，例如 header . nav . li ，nav框架中若存在 li標籤，不論是哪一個層級，都會直接受影響
-// SCSS 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎) 3.繼承% yourname (css語法相同，但能集中呈現)
+// 呼叫 html 標籤，例如：nav，稱作 類型選擇
+// 呼叫id ，例如：<li id="test"></li>, id="test", 「#」ID選擇器；「#test」
+// 呼叫class，class="test1", 「.」類別選擇器；「.test1」
+// 後代選擇器，例如 header nav li，nav框架中若存在li標籤，不論是哪一個層級，都會直接受影響
+// scss 1. 巢狀寫法  2. 變數 $yourname(設定計算用的基礎值) 3. 繼承 %yourname (css3語法相同，但能集中呈現) ；呼叫方式 @extend %yourname
 
-// 傳統css3 的寫法 隱藏
+// 傳統 css3 的寫法 隱藏
 // header {
-//   width: 100%;
+// 	width: 100%;
 // }
-// address,
-// #btnbox,
-// .icon {
-//   display: none;
+// address, #iconbox, .btnbox {
+// 	display: none;
 // }
 // #menubtn {
-//   background-color: burlywood;
+// 	background-color: burlywood;
 // }
-
-//目前使用的單位 (數位) 是百分比(%) ; 網頁固定單位--像素px
+// 目前使用單位(數值)是百分比(%)：網頁的固定單位--像素 px
 
 header {
-    // 寬度100%
-    width: $w10 * 10;
-    background-color: darkgoldenrod;
-    nav {
-        /*
-    浮動對齊的問題float
-    1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
-    2. nav 的父框架 header ，高度消失(展開)
-    解決方式
-    1. nav 的父框架 header ，給予高度: 或是nav 給予高度 
-    2.清除浮動狀態，由nav 設定
-    */
+	// 寬度 100%;
+	width: $w10 * 10;
+	background-color: violet;
+	nav {
+		/*
+        浮動對齊的問題float
+        1、#logo與.btnbox物件的父框架nav.無寬度
+        2、nav的父框架 header ，高度消失(展開)
+        解決方式
+        1、nav 的父框架 header，給予高度；或是nav給予高度
+        2、清除浮動狀態，由nav設定
+        3、利用圖片高度撐開父框架的高
+        */
+		width: $w10 * 10;
+		// 設定高度 單位為 % ( 未給予基準值，所以無法計算出實際高度 )
+		background-color: rgb(241, 105, 42);
+		// 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
-        width: $w10 * 10;
+		// 單位不同無法計算，所以改為同一位 vw
+		// 引入的程式，執行結果為 logo 與 menubtn 的寬度，所以要寫在父框架(nav)
+		@include LBW(8,5vw);
 
-        // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
-        // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
-        background-color: deeppink;
+		// 靠左排列(與menubtn同一行)
+		#logo {
+			// 寬度 % or vw ( 螢幕可視裝置寬度的百分比 )
+			// width: $w10 * 8 + 5%;
 
-        // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
-        // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
-        // 靠左排列(與menubtn排列)
-
-        // 單位不同無法計算，所以將原本5%，改成同一單位 vw
-        // 引入的程式，執行結果為 logo 與 btnbox 的寬度，所以要寫在父框架(nav)
-        @include LBW(8, 5vw);
-
-        #logo {
-            // 寬度 % 或 vw（螢幕可式範圍寬度的百分比）
-            // width: $W10 * 8 + 5%;
-
-            // 浮點對齊法: 靠左對齊 float:left
-            float: left;
-            background-color: antiquewhite;
-        }
-        #icon {
-            // 呼叫混合函式
-            @include DN;
-        }
-        .btnbox {
-            // 呼叫混合函式
-            @include DN;
-        }
-
-        // 靠左排列(與logo排列)
-        #menubtn {
-            height: 60px;
-            // 浮點對齊法：靠左對齊 float:left
-            float: left;
-            background-color: salmon;
-            // 文字取代圖片，呈現背景圖，而隱藏文字;首行縮排
-            text-indent: -9999px;
-            @include PoneMenu(center, contain, icon, "menu.svg");
-        }
-
-        .clear {
-            @include clearfloat;
-        }
-    }
+			float: left;
+			background-color: brown;
+		}
+		#iconbox {
+			// 呼叫 混合函式
+			@include DN;
+		}
+		.btnbox {
+			// 呼叫 混合函式
+			@include DN;
+		}
+		// 靠左排列(與logo同一行)
+		#menubtn {
+			height: 60px;
+			// 浮點對齊法：靠左對齊 float:left
+			float: left;
+			background-color: aquamarine;
+			// 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+			text-indent: -9999px;
+			@include PhoneMenu(center, contain, icon, "menubtn.png");
+		}
+		.clear {
+			@include ClearFloat;
+		}
+	}
 }
 
 footer {
-    // 物件之間的間距值 vh rem
-    margin-top: 2rem;
+	// 物件的間距值 vh rem
+	margin-top: 2rem;
 
-    hr {
-        margin-bottom: 2rem;
-    }
+	hr {
+		margin-bottom: 2rem;
+	}
 
-    // 手機版次導覽
-    nav {
-        ul {
-            width: 80%;
-            // 彈性佈局
-            display: flex;
-            // 隱藏項目符號
-            @include DNli;
-        }
-    }
+	// 手機版次導覽
+	nav {
+		margin-bottom: 2rem;
 
-    // 版權宣告
-    p {
-        // 文字置中
-        text-align: center;
-        // 與上方距離
-        margin-top: 2rem;
-        // 與底部距離
-        margin-bottom: 0.7rem;
-    }
+		ul {
+			width: 80%;
+			// 彈性佈局
+			display: flex;
+			@include DNli;
+			background-color: thistle;
+		}
+	}
 
-    address {
-        //呼叫混合模式
-        @include DN;
-    }
+	// 版權宣告
+	p {
+		text-align: center;
+		margin-bottom: 0.7rem;
+	}
+	address {
+		// 呼叫 混合函式
+		@include DN;
+	}
 }

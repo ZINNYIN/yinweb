@@ -27,7 +27,6 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     1. nav 的父框架 header ，給予高度: 或是nav 給予高度 
     2.清除浮動狀態，由nav 設定
     */
-    width: 100vw;
     background-color: deeppink;
   }
   header nav #logo {
@@ -167,6 +166,30 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #limited > .lcommodity {
     width: 80vw;
     background-color: aliceblue;
+    margin-bottom: 20px;
+  }
+  #main > #limited > .lcommodity > .lname > ul > li {
+    background-color: #f0be7e;
+    list-style-type: none;
+  }
+  #main > #limited > .lcommodity > #titlebox {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+    background-color: chartreuse;
+  }
+  #main > #limited > .lcommodity > #titlebox > .title {
+    width: 70%;
+  }
+  #main > #limited > .lcommodity > #titlebox .number {
+    width: 30%;
+  }
+  #main > #limited > .lcommodity > #titlebox .text {
+    width: 100%;
   }
 }
 
