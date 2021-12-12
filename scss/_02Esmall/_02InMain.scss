@@ -206,20 +206,38 @@
 
                 >.originalprice{
                      // 寬度
-                     width: $w1p *4;
+                     width: $w1p * 3.5;
                     // 文字尺寸
                     font-size: $trem * 0.9;
                     // 內間距
                     padding: {
                         top:$trem * 0.3;
                     }
+                    
+                    > span {
+                        padding: {
+                            left: 5px;
+                            right: 5px;
+                        }
+                        // 文字顏色
+                        color: blue;
+                    }
                 }
                 >.bargainlprice{
                     // 寬度
                      width: $w1p *4;   
-                    // 文字尺寸
+                    // em or rem 的尺寸，基於 根目錄之下的值為基準
                     font-size: $trem * 1.2;
-                   
+                    > span {
+                        padding: {
+                            left: 5px;
+                            right: 5px;
+                        }
+                        // 文字顏色
+                        color: brown;
+                        // 文字粗度
+                        font-weight: 600;
+                    }
                 }
                 >.car{
                     // 寬度

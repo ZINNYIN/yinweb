@@ -47,7 +47,7 @@ header {
 			float: left;
 			background-color: brown;
 		}
-		#iconbox {
+		#icon {
 			// 呼叫 混合函式
 			@include DN;
 		}
@@ -63,7 +63,7 @@ header {
 			background-color: aquamarine;
 			// 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
 			text-indent: -9999px;
-			@include PoneMenu(center, contain, icon, "menubtn.png");
+			@include PoneMenu(center, contain, icon, "menu.svg");
 		}
 		.clear {
 			@include clearfloat;

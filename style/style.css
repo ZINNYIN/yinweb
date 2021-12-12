@@ -41,7 +41,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     float: left;
     background-color: brown;
   }
-  header nav #iconbox {
+  header nav #icon {
     display: none;
   }
   header nav .btnbox {
@@ -55,7 +55,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../../image/icon/menubtn.png);
+    background-image: url(../../image/icon/menu.svg);
   }
   header nav .clear {
     clear: both;
@@ -238,13 +238,24 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-bottom: 10px;
   }
   #main > #limited > .lcommodity > #pricebox > .originalprice {
-    width: 40%;
+    width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
+  }
+  #main > #limited > .lcommodity > #pricebox > .originalprice > span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: blue;
   }
   #main > #limited > .lcommodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
+  }
+  #main > #limited > .lcommodity > #pricebox > .bargainlprice > span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: brown;
+    font-weight: 600;
   }
   #main > #limited > .lcommodity > #pricebox > .car {
     width: 20%;
