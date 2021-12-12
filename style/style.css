@@ -164,6 +164,10 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     top: 15px;
     bottom: 15px;
   }
+  #main > #limited > .lcommodity {
+    width: 80vw;
+    background-color: aliceblue;
+  }
 }
 
 @media screen and (min-width: 576px) {
