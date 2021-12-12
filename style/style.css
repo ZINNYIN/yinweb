@@ -210,6 +210,45 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
     background-color: #db963b;
   }
+  #main > #limited > .lcommodity > .lnamebox {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  #main > #limited > .lcommodity > .lnamebox > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #main > #limited > .lcommodity > .lnamebox > li {
+    width: 20%;
+    list-style-type: none;
+  }
+  #main > #limited > .lcommodity > .brief {
+    width: 85%;
+    text-align: justify;
+  }
+  #main > #limited > .lcommodity > #pricebox {
+    width: 90%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  #main > #limited > .lcommodity > #pricebox > .originalprice {
+    width: 40%;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+  }
+  #main > #limited > .lcommodity > #pricebox > .bargainlprice {
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  #main > #limited > .lcommodity > #pricebox > .car {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 576px) {
