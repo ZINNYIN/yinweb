@@ -1,6 +1,7 @@
 // 呼叫html 標籤 ，例如:nav，稱作 類型選擇
 //呼叫 Id ，例如 <li id="text"></li> ，id="text" ， 「#」 id選擇器 ; #text
 // 呼叫class ，class="text1" ，  .類別選擇器 ; .text
+// 後代選擇器，例如 header . nav . li ，nav框架中若存在 li標籤，不論是哪一個層級，都會直接受影響
 // SCSS 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎) 3.繼承% yourname (css語法相同，但能集中呈現)
 
 // 傳統css3 的寫法 隱藏

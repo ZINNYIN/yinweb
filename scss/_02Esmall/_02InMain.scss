@@ -76,4 +76,18 @@
             }
         }
     }
+    > #limited{
+        > h1{
+            // 文字尺寸
+            font-size: $trem*2+$trem*0.3;
+            // 標題置中
+            text-align: center;
+            // 內間距
+            padding{
+                top: 15px;
+                bottom: 15px;
+            }
+        }
+
+    }
 }
