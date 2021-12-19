@@ -310,17 +310,17 @@
         }
 
         > article {
+            width: $w1p * 7.5;
             // 彈性佈局 (一行兩列欄)
             display: flex;
             flex-wrap: wrap;
             > .lcommodity {
                 // 寬度
-                width: $w1p * 4.5;
+                width: $w1p * 10 / 4 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
                 }
-
                 // 背景顏色
                 background-color: rgb(255, 255, 255);
                 // 陰影 x軸 y軸 模糊 顏色

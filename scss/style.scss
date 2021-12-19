@@ -16,6 +16,7 @@
 // 平板裝置 >=768 medium min-width(最大寬度 含等於)
 @media screen and(min-width:768px) {
     @import "_04medium/01index";
+    @import "_04medium/_02InMain.scss";
     // @import "_04medium/02InMain";
 }
 // 大平板裝置>=992 large min-width(最大寬度 含等於)
@@ -26,6 +27,7 @@
 // 螢幕裝置>=1200px xlargr min-width(最大寬度 含等於)
 @media screen and(min-width:1200px) {
     @import "_06xlarge/01index";
+    @import "_06xlarge/02InMain";
 }
 
 // 超大螢幕裝置>=1400px xxlargr min-width(最大寬度 含等於)

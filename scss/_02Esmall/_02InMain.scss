@@ -76,7 +76,7 @@
             }
         }
     }
-    > #limited {
+    > #great {
         // 計算試
         $tw: $w1p * 7;
         $nw: $w1p * 10-$tw;
@@ -95,152 +95,402 @@
             }
         }
 
-        > .lcommodity {
-            // 寬度
-            width: $w10 * 8;
-            // 背景顏色
-            background-color: aliceblue;
-            // 外間距
-            margin: {
-                bottom: 20px;
-            }
-            > .lname {
-                > ul {
+        > article {
+            > .lcommodity {
+                // 寬度
+                width: $w10 * 9;
+                // 外間距
+                margin: {
+                    bottom: 20px;
+                }
+
+                // 背景顏色
+                background-color: rgb(255, 255, 255);
+                // 陰影 x軸 y軸 模糊 顏色
+                box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+
+                > #titlebox {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 彈性佈局
+                    display: flex;
+                    // 換行
+                    flex-wrap: wrap;
+                    // 隱藏項目符號
+                    list-style-type: none;
+
+                    // 字距
+                    letter-spacing: 2px;
+
+                    // 與外框的距離，設定為內間距
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    }
+
+                    > .title {
+                        width: $tw;
+                        font-size: $tfs;
+                    }
+                    > .number {
+                        width: $nw;
+                        font-size: $nfs;
+                        text-align: right;
+                        // 計算 title 與 number 內間距的差
+                        padding: {
+                            top: $tfs - $nfs;
+                        }
+                    }
+                    .text {
+                        width: $w1p * 10;
+                        text-align: right;
+                    }
+                }
+
+                > .images {
+                    // 寬度
+                    width: $w1p * 9.2;
+                    // 高度 設定絕對高，不會隨著裝置高度變動
+                    height: 180px;
+                    margin: {
+                        bottom: 10px;
+                    }
+                    // 圓角矩形，邊框設定轉角的角度
+                    border-radius: 15px;
+                    // background-color: rgb(219, 150, 59);
+
+                    > a {
+                        > img {
+                            // 圖片邊框 線段的粗細 線段的樣式(實框) 顏色
+                            border: 1.5px solid rgb(68, 7, 7);
+                            border-radius: 15px;
+                        }
+                    }
+                }
+                > .lnamebox {
+                    width: $w1p * 9;
+                    // 彈性佈局 橫向排版
+                    display: flex;
+                    // 外間距
+                    margin: {
+                        bottom: 15px;
+                    }
+
+                    > h3 {
+                        width: $tw + 10;
+                        // 文字尺寸
+                        font-size: $trem * 1.4;
+                    }
                     > li {
-                        background-color: rgb(240, 190, 126);
+                        width: $nw - 10;
                         // 隱藏項目符號
                         list-style-type: none;
                     }
                 }
-            }
-            > #titlebox {
-                // 寬度
-                width: $w1p * 8.5;
-                // 彈性佈局
-                display: flex;
-                // 換行
-                flex-wrap: wrap;
-                // 隱藏項目符號
-                list-style-type: none;
-
-                // 字距
-                letter-spacing: 2px;
-
-                // 與外框的距離，設定為內間距
-                padding: {
-                    top: 15px;
-                    bottom: 15px;
+                > .brief {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 文字對齊 左右切齊
+                    text-align: justify;
                 }
 
-                > .title {
-                    width: $tw;
-                    font-size: $tfs;
-                }
-                > .number {
-                    width: $nw;
-                    font-size: $nfs;
-                    text-align: right;
-                    // 計算 title 與 number 內間距的差
-                    padding: {
-                        top: $tfs - $nfs;
-                    }
-                }
-                .text {
-                    width: $w1p * 10;
-                    text-align: right;
-                }
-            }
-
-            > .images {
-                // 寬度
-                width: $w1p * 9.5;
-                // 高度 設定絕對高，不會隨著裝置高度變動
-                height: 230px;
-                margin: {
-                    bottom: 10px;
-                }
-                // 圓角矩形，邊框設定轉角的角度
-                border-radius: 15px;
-                background-color: rgb(219, 150, 59);
-            }
-            > .lnamebox {
-                width: $w1p * 9;
-                // 彈性佈局 橫向排版
-                display: flex;
-                // 外間距
-                margin: {
-                    bottom: 15px;
-                }
-
-                > h3 {
-                    width: $tw + 10;
-                    // 文字尺寸
-                    font-size: $trem * 1.4;
-                }
-                > li {
-                    width: $nw - 10;
+                > #pricebox {
+                    // 寬度
+                    width: $w1p * 9;
                     // 隱藏項目符號
                     list-style-type: none;
-                }
-            }
-            > .brief {
-                // 寬度
-                width: $w1p * 8.5;
-                // 文字對齊 左右切齊
-                text-align: justify;
-            }
-
-            > #pricebox {
-                // 寬度
-                width: $w1p * 9;
-                // 隱藏項目符號
-                list-style-type: none;
-                // 彈性佈局
-                display: flex;
-                // 外間距
-                padding: {
-                    bottom: 10px;
-                }
-
-                > .originalprice {
-                    // 寬度
-                    width: $w1p * 3.5;
-                    // 文字尺寸
-                    font-size: $trem * 0.9;
-                    // 內間距
+                    // 彈性佈局
+                    display: flex;
+                    // 外間距
                     padding: {
-                        top: $trem * 0.3;
+                        bottom: 10px;
                     }
 
-                    > span {
+                    > .originalprice {
+                        // 寬度
+                        width: $w1p * 3.5;
+                        // 文字尺寸
+                        font-size: $trem * 0.9;
+                        // 內間距
                         padding: {
-                            left: 5px;
-                            right: 5px;
+                            top: $trem * 0.3;
                         }
-                        // 文字顏色
-                        color: blue;
+
+                        > span {
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: blue;
+                        }
+                    }
+                    > .bargainlprice {
+                        // 寬度
+                        width: $w1p * 4;
+                        // em or rem 的尺寸，基於 根目錄之下的值為基準
+                        font-size: $trem * 1.2;
+                        > span {
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: brown;
+                            // 文字粗度
+                            font-weight: 600;
+                        }
+                    }
+                    > .car {
+                        // 寬度
+                        width: $w1p * 2;
                     }
                 }
-                > .bargainlprice {
+            }
+        }
+
+        // more
+        > .more {
+            width: $w1p * 8;
+            // 文字對齊
+            text-align: right;
+            // 隱藏項目符號
+            @include DNli;
+            // 文字尺寸
+            font-size: $trem * 1.6;
+            // 英文轉換為大寫
+            text-transform: uppercase;
+            // 字距
+            letter-spacing: 2px;
+
+            // 外間距
+            margin: {
+                bottom: 15px;
+            }
+
+            > a {
+                //寬度 高度 px  設定內間距   padding 上下 左右
+                padding: 3px 15px;
+                // 顯示方式 文字方塊
+                display: inline-block;
+                background-color: rgba(170, 90, 20, 0.5);
+                // 取消連結底線樣式
+                text-decoration: none;
+                // 顏色
+                color: rgb(252, 252, 252);
+                // 圓角矩形
+                border-radius: 25px;
+            }
+        }
+    }
+    > #limited {
+        // 計算試
+        $tw: $w1p * 7;
+        $nw: $w1p * 10-$tw;
+
+        $tfs: $trem * 1.7;
+        $nfs: $trem * 1.1;
+
+        > h1 {
+            // 文字尺寸
+            font-size: $trem * 2 + $trem * 0.3;
+            // 標題置中
+            text-align: center;
+            // 內間距
+            padding {
+                top: 15px;
+                bottom: 15px;
+            }
+        }
+
+        > article {
+            > .lcommodity {
+                // 寬度
+                width: $w10 * 9;
+                // 外間距
+                margin: {
+                    bottom: 20px;
+                }
+
+                // 背景顏色
+                background-color: rgb(255, 255, 255);
+                // 陰影 x軸 y軸 模糊 顏色
+                box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+                > .null {
+                    height: 30px;
+                }
+
+                > #titlebox {
                     // 寬度
-                    width: $w1p * 4;
-                    // em or rem 的尺寸，基於 根目錄之下的值為基準
-                    font-size: $trem * 1.2;
-                    > span {
+                    width: $w1p * 8.5;
+                    // 彈性佈局
+                    display: flex;
+                    // 換行
+                    flex-wrap: wrap;
+                    // 隱藏項目符號
+                    list-style-type: none;
+
+                    // 字距
+                    letter-spacing: 2px;
+
+                    // 與外框的距離，設定為內間距
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    }
+
+                    > .title {
+                        width: $tw;
+                        font-size: $tfs;
+                    }
+                    > .number {
+                        width: $nw;
+                        font-size: $nfs;
+                        text-align: right;
+                        // 計算 title 與 number 內間距的差
                         padding: {
-                            left: 5px;
-                            right: 5px;
+                            top: $tfs - $nfs;
                         }
-                        // 文字顏色
-                        color: brown;
-                        // 文字粗度
-                        font-weight: 600;
+                    }
+                    .text {
+                        width: $w1p * 10;
+                        text-align: right;
                     }
                 }
-                > .car {
+
+                > .images {
                     // 寬度
-                    width: $w1p * 2;
+                    width: $w1p * 9.2;
+                    // 高度 設定絕對高，不會隨著裝置高度變動
+                    height: 180px;
+                    padding: {
+                        bottom: 10px;
+                    }
+                    // 圓角矩形，邊框設定轉角的角度
+                    border-radius: 15px;
+                    // background-color: rgb(219, 150, 59);
+
+                    > a {
+                        > img {
+                            // 圖片邊框 線段的粗細 線段的樣式(實框) 顏色
+                            border: 1.5px solid rgb(68, 7, 7);
+                            border-radius: 15px;
+                        }
+                    }
                 }
+                > .lnamebox {
+                    width: $w1p * 9;
+                    // 彈性佈局 橫向排版
+                    display: flex;
+                    // 外間距
+                    margin: {
+                        bottom: 15px;
+                    }
+
+                    > h3 {
+                        width: $tw + 10;
+                        // 文字尺寸
+                        font-size: $trem * 1.4;
+                    }
+                    > li {
+                        width: $nw - 10;
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
+                }
+                > .brief {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 文字對齊 左右切齊
+                    text-align: justify;
+                }
+
+                > #pricebox {
+                    // 寬度
+                    width: $w1p * 9;
+                    // 隱藏項目符號
+                    list-style-type: none;
+                    // 彈性佈局
+                    display: flex;
+                    // 外間距
+                    padding: {
+                        bottom: 10px;
+                    }
+
+                    > .originalprice {
+                        // 寬度
+                        width: $w1p * 3.5;
+                        // 文字尺寸
+                        font-size: $trem * 0.9;
+                        // 內間距
+                        padding: {
+                            top: $trem * 0.3;
+                        }
+
+                        > span {
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: blue;
+                        }
+                    }
+                    > .bargainlprice {
+                        // 寬度
+                        width: $w1p * 4;
+                        // em or rem 的尺寸，基於 根目錄之下的值為基準
+                        font-size: $trem * 1.2;
+                        > span {
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: brown;
+                            // 文字粗度
+                            font-weight: 600;
+                        }
+                    }
+                    > .car {
+                        // 寬度
+                        width: $w1p * 2;
+                    }
+                }
+            }
+        }
+
+        // more
+        > .more {
+            width: $w1p * 8;
+            // 文字對齊
+            text-align: right;
+            // 隱藏項目符號
+            @include DNli;
+            // 文字尺寸
+            font-size: $trem * 1.6;
+            // 英文轉換為大寫
+            text-transform: uppercase;
+            // 字距
+            letter-spacing: 2px;
+
+            // 外間距
+            margin: {
+                bottom: 15px;
+            }
+
+            > a {
+                //寬度 高度 px  設定內間距   padding 上下 左右
+                padding: 3px 15px;
+                // 顯示方式 文字方塊
+                display: inline-block;
+                background-color: rgba(170, 90, 20, 0.5);
+                // 取消連結底線樣式
+                text-decoration: none;
+                // 顏色
+                color: rgb(252, 252, 252);
+                // 圓角矩形
+                border-radius: 25px;
             }
         }
     }
