@@ -17,11 +17,11 @@
 // 目前使用單位(數值)是百分比(%)：網頁的固定單位--像素 px
 
 header {
-	// 寬度 100%;
-	width: $w10 * 10;
-	background-color: violet;
-	nav {
-		/*
+    // 寬度 100%;
+    width: $w10 * 10;
+    background-color: violet;
+    nav {
+        /*
         浮動對齊的問題float
         1、#logo與.btnbox物件的父框架nav.無寬度
         2、nav的父框架 header ，高度消失(展開)
@@ -30,75 +30,75 @@ header {
         2、清除浮動狀態，由nav設定
         3、利用圖片高度撐開父框架的高
         */
-		width: $w10 * 10;
-		// 設定高度 單位為 % ( 未給予基準值，所以無法計算出實際高度 )
-		background-color: rgb(241, 105, 42);
-		// 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
+        width: $w10 * 10;
+        // 設定高度 單位為 % ( 未給予基準值，所以無法計算出實際高度 )
+        background-color: rgb(241, 105, 42);
+        // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
-		// 單位不同無法計算，所以改為同一位 vw
-		// 引入的程式，執行結果為 logo 與 menubtn 的寬度，所以要寫在父框架(nav)
-		@include LBW(8,5vw);
+        // 單位不同無法計算，所以改為同一位 vw
+        // 引入的程式，執行結果為 logo 與 menubtn 的寬度，所以要寫在父框架(nav)
+        @include LBW(8, 5vw);
 
-		// 靠左排列(與menubtn同一行)
-		#logo {
-			// 寬度 % or vw ( 螢幕可視裝置寬度的百分比 )
-			// width: $w10 * 8 + 5%;
+        // 靠左排列(與menubtn同一行)
+        #logo {
+            // 寬度 % or vw ( 螢幕可視裝置寬度的百分比 )
+            // width: $w10 * 8 + 5%;
 
-			float: left;
-			background-color: brown;
-		}
-		#icon {
-			// 呼叫 混合函式
-			@include DN;
-		}
-		.btnbox {
-			// 呼叫 混合函式
-			@include DN;
-		}
-		// 靠左排列(與logo同一行)
-		#menubtn {
-			height: 60px;
-			// 浮點對齊法：靠左對齊 float:left
-			float: left;
-			background-color: aquamarine;
-			// 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
-			text-indent: -9999px;
-			@include PoneMenu(center, contain, icon, "menu.svg");
-		}
-		.clear {
-			@include clearfloat;
-		}
-	}
+            float: left;
+            background-color: brown;
+        }
+        #icon {
+            // 呼叫 混合函式
+            @include DN;
+        }
+        .btnbox {
+            // 呼叫 混合函式
+            @include DN;
+        }
+        // 靠左排列(與logo同一行)
+        #menubtn {
+            height: 60px;
+            // 浮點對齊法：靠左對齊 float:left
+            float: left;
+            background-color: aquamarine;
+            // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+            text-indent: -9999px;
+            @include PoneMenu(center, contain, icon, "menu.svg");
+        }
+        .clear {
+            @include clearfloat;
+        }
+    }
 }
 
 footer {
-	// 物件的間距值 vh rem
-	margin-top: 2rem;
+    // 物件的間距值 vh rem
+    // margin-top: 2rem;
 
-	hr {
-		margin-bottom: 2rem;
-	}
+    hr {
+        margin-bottom: 2rem;
+    }
 
-	// 手機版次導覽
-	nav {
-		margin-bottom: 2rem;
+    // 手機版次導覽
+    nav {
+        margin-bottom: 2rem;
 
-		ul {
-			width: 80%;
-			// 彈性佈局
-			display: flex;
-			@include DNli;
-			background-color: thistle;
-		}
-	}
+        ul {
+            width: 80%;
+            // 彈性佈局
+            display: flex;
+            @include DNli;
+            background-color: thistle;
+        }
+    }
 
-	// 版權宣告
-	p {
-		text-align: center;
-		margin-bottom: 0.7rem;
-	}
-	address {
-		// 呼叫 混合函式
-		@include DN;
-	}
+    // 版權宣告
+    p {
+        text-align: center;
+        margin-bottom: 0.7rem;
+    }
+    address {
+        // 呼叫 混合函式
+        @include DN;
+    }
 }

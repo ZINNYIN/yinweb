@@ -7,9 +7,9 @@
         position: relative;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
-        $imgpadding: 335px;
-        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $differ
-        $differ: 85px;
+        $imgpadding: 385px;
+        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $differ 85
+        $differ: 90px;
 
         .btn {
             width: 20px;
@@ -83,22 +83,27 @@
 
         $tfs: $trem * 1.7;
         $nfs: $trem * 1.1;
+
         > h1 {
+            width: $w1p * 10;
             // 文字尺寸
             font-size: $trem * 2 + $trem * 0.3;
             // 標題置中
             text-align: center;
             // 內間距
-            padding {
+            margin: {
                 top: 15px;
                 bottom: 15px;
             }
         }
 
         > article {
+            // 彈性佈局 (一行兩列欄)
+            display: flex;
+            flex-wrap: wrap;
             > .lcommodity {
                 // 寬度
-                width: $w10 * 9;
+                width: $w1p * 10 / 3 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
@@ -149,9 +154,9 @@
 
                 > .images {
                     // 寬度
-                    width: $w1p * 9.2;
+                    width: $w1p * 8.5;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 180px;
+                    height: 230px;
                     margin: {
                         bottom: 10px;
                     }
@@ -192,6 +197,9 @@
                     width: $w1p * 8.5;
                     // 文字對齊 左右切齊
                     text-align: justify;
+                    padding: {
+                        bottom: 15px;
+                    }
                 }
 
                 > #pricebox {
@@ -263,8 +271,8 @@
             // 字距
             letter-spacing: 2px;
 
-            // 內間距
-            padding: {
+            // 外間距
+            margin: {
                 bottom: 15px;
             }
 
@@ -292,21 +300,25 @@
         $nfs: $trem * 1.1;
 
         > h1 {
+            width: $w1p * 10;
             // 文字尺寸
             font-size: $trem * 2 + $trem * 0.3;
             // 標題置中
             text-align: center;
             // 內間距
-            padding {
+            margin: {
                 top: 15px;
                 bottom: 15px;
             }
         }
 
         > article {
+            // 彈性佈局 (一行兩列欄)
+            display: flex;
+            flex-wrap: wrap;
             > .lcommodity {
                 // 寬度
-                width: $w10 * 9;
+                width: $w1p * 10 / 3 - 1%;
                 // 外間距
                 margin: {
                     bottom: 20px;
@@ -316,9 +328,6 @@
                 background-color: rgb(255, 255, 255);
                 // 陰影 x軸 y軸 模糊 顏色
                 box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
-                > .null {
-                    height: 30px;
-                }
 
                 > #titlebox {
                     // 寬度
@@ -360,10 +369,10 @@
 
                 > .images {
                     // 寬度
-                    width: $w1p * 9.2;
+                    width: $w1p * 8.5;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 180px;
-                    padding: {
+                    height: 230px;
+                    margin: {
                         bottom: 10px;
                     }
                     // 圓角矩形，邊框設定轉角的角度
@@ -477,8 +486,8 @@
             // 字距
             letter-spacing: 2px;
 
-            // 內間距
-            padding: {
+            // 外間距
+            margin: {
                 bottom: 15px;
             }
 
