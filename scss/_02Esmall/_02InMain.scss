@@ -76,26 +76,26 @@
             }
         }
     }
-    > #limited{
+    > #limited {
         // 計算試
-        $tw:$w1p * 7;
-        $nw:$w1p * 10-$tw;
+        $tw: $w1p * 7;
+        $nw: $w1p * 10-$tw;
 
         $tfs: $trem * 1.7;
         $nfs: $trem * 1.1;
-        > h1{
+        > h1 {
             // 文字尺寸
-            font-size: $trem*2+$trem*0.3;
+            font-size: $trem * 2 + $trem * 0.3;
             // 標題置中
             text-align: center;
             // 內間距
-            padding{
+            padding {
                 top: 15px;
                 bottom: 15px;
             }
         }
 
-        >.lcommodity{
+        > .lcommodity {
             // 寬度
             width: $w10 * 8;
             // 背景顏色
@@ -104,16 +104,16 @@
             margin: {
                 bottom: 20px;
             }
-            >.lname{
-                >ul{
-                    >li{
+            > .lname {
+                > ul {
+                    > li {
                         background-color: rgb(240, 190, 126);
                         // 隱藏項目符號
                         list-style-type: none;
                     }
                 }
             }
-            >#titlebox {
+            > #titlebox {
                 // 寬度
                 width: $w1p * 8.5;
                 // 彈性佈局
@@ -122,38 +122,36 @@
                 flex-wrap: wrap;
                 // 隱藏項目符號
                 list-style-type: none;
-                
+
                 // 字距
                 letter-spacing: 2px;
-                
+
                 // 與外框的距離，設定為內間距
                 padding: {
                     top: 15px;
-                    bottom:15px;
+                    bottom: 15px;
                 }
-                
-                
-                >.title {
-                width: $tw ;
-                font-size: $tfs;
+
+                > .title {
+                    width: $tw;
+                    font-size: $tfs;
                 }
-                >.number{
+                > .number {
                     width: $nw;
-                    font-size:$nfs;
+                    font-size: $nfs;
                     text-align: right;
                     // 計算 title 與 number 內間距的差
                     padding: {
                         top: $tfs - $nfs;
                     }
-                
                 }
-                .text{
-                    width: $w1p *10 ;
+                .text {
+                    width: $w1p * 10;
                     text-align: right;
                 }
             }
 
-            >.images{
+            > .images {
                 // 寬度
                 width: $w1p * 9.5;
                 // 高度 設定絕對高，不會隨著裝置高度變動
@@ -165,8 +163,8 @@
                 border-radius: 15px;
                 background-color: rgb(219, 150, 59);
             }
-            >.lnamebox{
-                width: $w1p * 9 ;
+            > .lnamebox {
+                width: $w1p * 9;
                 // 彈性佈局 橫向排版
                 display: flex;
                 // 外間距
@@ -174,25 +172,25 @@
                     bottom: 15px;
                 }
 
-                >h3{
+                > h3 {
                     width: $tw + 10;
                     // 文字尺寸
                     font-size: $trem * 1.4;
                 }
-                >li{
+                > li {
                     width: $nw - 10;
                     // 隱藏項目符號
                     list-style-type: none;
                 }
             }
-            >.brief{
+            > .brief {
                 // 寬度
                 width: $w1p * 8.5;
                 // 文字對齊 左右切齊
                 text-align: justify;
             }
 
-            >#pricebox{
+            > #pricebox {
                 // 寬度
                 width: $w1p * 9;
                 // 隱藏項目符號
@@ -204,16 +202,16 @@
                     bottom: 10px;
                 }
 
-                >.originalprice{
-                     // 寬度
-                     width: $w1p * 3.5;
+                > .originalprice {
+                    // 寬度
+                    width: $w1p * 3.5;
                     // 文字尺寸
                     font-size: $trem * 0.9;
                     // 內間距
                     padding: {
-                        top:$trem * 0.3;
+                        top: $trem * 0.3;
                     }
-                    
+
                     > span {
                         padding: {
                             left: 5px;
@@ -223,9 +221,9 @@
                         color: blue;
                     }
                 }
-                >.bargainlprice{
+                > .bargainlprice {
                     // 寬度
-                     width: $w1p *4;   
+                    width: $w1p * 4;
                     // em or rem 的尺寸，基於 根目錄之下的值為基準
                     font-size: $trem * 1.2;
                     > span {
@@ -239,11 +237,11 @@
                         font-weight: 600;
                     }
                 }
-                >.car{
+                > .car {
                     // 寬度
                     width: $w1p * 2;
                 }
-            } 
+            }
         }
     }
 }
