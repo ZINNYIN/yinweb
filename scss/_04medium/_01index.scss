@@ -23,7 +23,7 @@ header {
     width: $w10 * 10;
 
     background-color: rgb(39, 17, 240);
-    nav {
+    > #mainnav {
         /*
     浮動對齊的問題float
     1. .btnbox 與 #icon 物件的父框架 nav ，無寬度
