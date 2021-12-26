@@ -18,7 +18,7 @@
 
 header {
     // 寬度 100%;
-    width: $w10 * 10;
+    width: $w1p * 10;
     background-color: violet;
     nav {
         /*
@@ -30,6 +30,7 @@ header {
         2、清除浮動狀態，由nav設定
         3、利用圖片高度撐開父框架的高
         */
+
         width: $w10 * 10;
         // 設定高度 單位為 % ( 未給予基準值，所以無法計算出實際高度 )
         background-color: rgb(241, 105, 42);
@@ -39,13 +40,19 @@ header {
         // 引入的程式，執行結果為 logo 與 menubtn 的寬度，所以要寫在父框架(nav)
         @include LBW(8, 5vw);
 
+        // 定位點 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        z-index: 999;
+        background-color: blueviolet;
+
         // 靠左排列(與menubtn同一行)
         #logo {
             // 寬度 % or vw ( 螢幕可視裝置寬度的百分比 )
             // width: $w10 * 8 + 5%;
-
             float: left;
-            background-color: brown;
+            background-color: rgb(148, 78, 78);
         }
         #icon {
             // 呼叫 混合函式

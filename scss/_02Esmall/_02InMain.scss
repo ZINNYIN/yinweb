@@ -3,10 +3,16 @@
 
     #banner {
         width: $w10 * 10;
-        // 定位點，相對定位
-        position: relative;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
+        // 定位點，相對定位
+        position: relative;
+
+        // 外間距 設定為nav 的高度
+        margin: {
+            top: 60px;
+        }
+
         $imgpadding: 335px;
         // 父框架的padding 335px - 子框架的padding 250px = 相差值 $differ
         $differ: 85px;
@@ -151,7 +157,8 @@
                     // 寬度
                     width: $w1p * 9.2;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 180px;
+                    // height: 180px;
+                    // 不用給高度，用圖片撐
                     margin: {
                         bottom: 10px;
                     }

@@ -310,9 +310,15 @@
         }
 
         > article {
+            width: $w1p * 9.5;
             // 彈性佈局 (一行兩列欄)
             display: flex;
             flex-wrap: wrap;
+            // 行(順序排列)
+            flex-direction: row;
+            // 主軸心(水平) 靠左--預設值，可以不給
+            // justify-content: flex-start;
+
             > .lcommodity {
                 // 寬度
                 width: $w1p * 4.5;
@@ -368,7 +374,7 @@
                     // 寬度
                     width: $w1p * 8.5;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 230px;
+                    // height: 230px;
                     margin: {
                         bottom: 10px;
                     }
