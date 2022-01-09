@@ -72,6 +72,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     clear: both;
   }
   header > #menunav {
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -137,7 +138,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     list-style-type: none;
     background-color: thistle;
   }
-  footer p {
+  footer div {
     text-align: center;
     margin-bottom: 0.7rem;
   }
@@ -272,11 +273,11 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
   }
   #main > #great > article > .lcommodity > .lnamebox {
-    width: 90%;
+    width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
   #main > #great > article > .lcommodity > .lnamebox > h3 {
     width: 80%;
@@ -289,6 +290,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #great > article > .lcommodity > .brief {
     width: 85%;
     text-align: justify;
+    margin-bottom: 10px;
   }
   #main > #great > article > .lcommodity > #pricebox {
     width: 90%;
@@ -384,8 +386,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   #main > #limited > article > .lcommodity > .images {
     width: 92%;
-    height: 180px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     border-radius: 15px;
   }
   #main > #limited > article > .lcommodity > .images > a > img {
@@ -393,11 +394,11 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
   }
   #main > #limited > article > .lcommodity > .lnamebox {
-    width: 90%;
+    width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main > #limited > article > .lcommodity > .lnamebox > h3 {
     width: 80%;
@@ -514,7 +515,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     list-style-type: none;
   }
-  footer p {
+  footer div {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 0.7rem;
@@ -647,7 +648,6 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   #main > #great > article > .lcommodity > .images {
     width: 85%;
-    height: 230px;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -784,11 +784,11 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
   }
   #main > #limited > article > .lcommodity > .lnamebox {
-    width: 90%;
+    width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main > #limited > article > .lcommodity > .lnamebox > h3 {
     width: 80%;
@@ -801,6 +801,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #limited > article > .lcommodity > .brief {
     width: 85%;
     text-align: justify;
+    margin-bottom: 10px;
   }
   #main > #limited > article > .lcommodity > #pricebox {
     width: 90%;
@@ -1082,7 +1083,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #great > article > .lcommodity > .brief {
     width: 85%;
     text-align: justify;
-    padding-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main > #great > article > .lcommodity > #pricebox {
     width: 90%;
@@ -1145,10 +1146,13 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 95%;
   }
   #main > #limited > article > .lcommodity {
-    width: 32.33333%;
+    width: 30.33333%;
     margin-bottom: 20px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -1181,7 +1185,6 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   #main > #limited > article > .lcommodity > .images {
     width: 85%;
-    height: 230px;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -1207,38 +1210,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #limited > article > .lcommodity > .brief {
     width: 85%;
     text-align: justify;
-    padding-bottom: 15px;
-  }
-  #main > #limited > article > .lcommodity > #pricebox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice {
-    width: 40%;
-    font-size: 1.2rem;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .car {
-    width: 20%;
+    margin-bottom: 10px;
   }
   #main > #limited > .more {
     width: 80%;
@@ -1398,11 +1370,11 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
   }
   #main > #great > article > .lcommodity > .lnamebox {
-    width: 90%;
+    width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main > #great > article > .lcommodity > .lnamebox > h3 {
     width: 80%;
@@ -1516,7 +1488,6 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   #main > #limited > article > .lcommodity > .images {
     width: 85%;
-    height: 230px;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -1525,11 +1496,11 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     border-radius: 15px;
   }
   #main > #limited > article > .lcommodity > .lnamebox {
-    width: 90%;
+    width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #main > #limited > article > .lcommodity > .lnamebox > h3 {
     width: 80%;
@@ -1543,37 +1514,6 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
-  }
-  #main > #limited > article > .lcommodity > #pricebox {
-    width: 90%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice {
-    width: 35%;
-    font-size: 0.9rem;
-    padding-top: 0.3rem;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: blue;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice {
-    width: 40%;
-    font-size: 1.2rem;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice > span {
-    padding-left: 5px;
-    padding-right: 5px;
-    color: brown;
-    font-weight: 600;
-  }
-  #main > #limited > article > .lcommodity > #pricebox > .car {
-    width: 20%;
   }
   #main > #limited > .more {
     width: 80%;

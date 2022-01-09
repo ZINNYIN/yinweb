@@ -175,12 +175,12 @@
                     }
                 }
                 > .lnamebox {
-                    width: $w1p * 9;
+                    width: $w1p * 8.5;
                     // 彈性佈局 橫向排版
                     display: flex;
                     // 外間距
                     margin: {
-                        bottom: 15px;
+                        bottom: 9px;
                     }
 
                     > h3 {
@@ -199,6 +199,10 @@
                     width: $w1p * 8.5;
                     // 文字對齊 左右切齊
                     text-align: justify;
+                    // 外間距
+                    margin: {
+                        bottom: 10px;
+                    }
                 }
 
                 > #pricebox {
@@ -369,8 +373,8 @@
                     // 寬度
                     width: $w1p * 9.2;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 180px;
-                    padding: {
+
+                    margin: {
                         bottom: 10px;
                     }
                     // 圓角矩形，邊框設定轉角的角度
@@ -386,12 +390,12 @@
                     }
                 }
                 > .lnamebox {
-                    width: $w1p * 9;
+                    width: $w1p * 8.5;
                     // 彈性佈局 橫向排版
                     display: flex;
                     // 外間距
                     margin: {
-                        bottom: 15px;
+                        bottom: 10px;
                     }
 
                     > h3 {

@@ -206,8 +206,9 @@
                     width: $w1p * 8.5;
                     // 文字對齊 左右切齊
                     text-align: justify;
-                    padding: {
-                        bottom: 15px;
+                    // 外間距
+                    margin: {
+                        bottom: 10px;
                     }
                 }
 
@@ -300,6 +301,7 @@
             }
         }
     }
+
     > #limited {
         // 計算試
         $tw: $w1p * 7;
@@ -325,12 +327,21 @@
             // 彈性佈局 (一行兩列欄)
             display: flex;
             flex-wrap: wrap;
+            width: $w1p * 9.5;
+            // 導讀 03small 02檔
+
             > .lcommodity {
+                // 寬度變數
+                $comw: $w1p * 10 / 3 - 3%;
                 // 寬度
-                width: $w1p * 10 / 3 - 1%;
+                width: $comw;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // (總寬度 100) - (物件的寬度30.333 * 物件數 3 =91 ) = 9(剩下的寬度)
+                    // 剩下的寬度 / 左右邊各自總數
+                    left: ((($w1p * 10) - ($comw * 3)) / 2) /3;
+                    right: ((($w1p * 10) - ($comw * 3)) / 2) /3;
                 }
 
                 // 背景顏色
@@ -380,7 +391,7 @@
                     // 寬度
                     width: $w1p * 8.5;
                     // 高度 設定絕對高，不會隨著裝置高度變動
-                    height: 230px;
+                    // height: 230px;
                     margin: {
                         bottom: 10px;
                     }
@@ -421,61 +432,9 @@
                     width: $w1p * 8.5;
                     // 文字對齊 左右切齊
                     text-align: justify;
-                    padding: {
-                        bottom: 15px;
-                    }
-                }
-
-                > #pricebox {
-                    // 寬度
-                    width: $w1p * 9;
-                    // 隱藏項目符號
-                    list-style-type: none;
-                    // 彈性佈局
-                    display: flex;
                     // 外間距
-                    padding: {
+                    margin: {
                         bottom: 10px;
-                    }
-
-                    > .originalprice {
-                        // 寬度
-                        width: $w1p * 3.5;
-                        // 文字尺寸
-                        font-size: $trem * 0.9;
-                        // 內間距
-                        padding: {
-                            top: $trem * 0.3;
-                        }
-
-                        > span {
-                            padding: {
-                                left: 5px;
-                                right: 5px;
-                            }
-                            // 文字顏色
-                            color: blue;
-                        }
-                    }
-                    > .bargainlprice {
-                        // 寬度
-                        width: $w1p * 4;
-                        // em or rem 的尺寸，基於 根目錄之下的值為基準
-                        font-size: $trem * 1.2;
-                        > span {
-                            padding: {
-                                left: 5px;
-                                right: 5px;
-                            }
-                            // 文字顏色
-                            color: brown;
-                            // 文字粗度
-                            font-weight: 600;
-                        }
-                    }
-                    > .car {
-                        // 寬度
-                        width: $w1p * 2;
                     }
                 }
             }

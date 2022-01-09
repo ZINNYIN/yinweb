@@ -231,12 +231,12 @@ $trem: 1rem;
         }
     }
     > .lnamebox {
-        width: $w1p * 9;
+        width: $w1p * 8.5;
         // 彈性佈局 橫向排版
         display: flex;
         // 外間距
         margin: {
-            bottom: 15px;
+            bottom: 10px;
         }
 
         > h3 {
