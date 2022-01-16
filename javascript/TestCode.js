@@ -159,6 +159,16 @@
             
     }
         }
+        arraycode();
+    //陣列 array 基本會配合 迴圈for 處理
+    function arraycode() {
+        // 宣告陣列變數 給予值
+        let Items = [101,'01','項目'];
+        // 輸出資料 迴圈讀取 陣列 的索引碼，起始索引碼為0
+        for(let i =0 ; i <=2 ; i++) {
+            console.log(Items[i]);
+        }
+    }
         
         
    
