@@ -2,7 +2,7 @@
 /*雙引號(") 和單引號(')為字串 */
 
     // TestCode();
-    TimeYear();
+    // TimeYear();  CopyRightContent () 內呼叫
 
     function TimeYear(){
         // 日期函數 date  產生新的 date
@@ -169,6 +169,41 @@
             console.log(Items[i]);
         }
     }
-        
+          // 新增 html 的標籤與內容
+
+          CopyRightContent ();
+    function CopyRightContent () {
+        // 宣告變數 在 html 內新增 div 標籤
+        let div = document.createElement('div') ;
+
+        // 宣告變數 在哪個 html 標籤之內新增 div
+        let footer = document.getElementById('footer');
+
+        // 在footer 內 ，新增div 子元素
+        footer.appendChild(div);
+
+        // 純文字
+        // div.textContent = "六月初一有限公司版權宣告&copy; 2021"
+
+        // html 語法
+        div.innerHTML = '六月初一有限公司版權宣告&copy; 2021-<span id="year"></span>'
+        TimeYear();
+
+
+        // 調整  框架 位置
+        // 1. 再被選取的元素開頭插入內容 prepend() 置入被選取元素之中
+        // 呼叫要選取的標籤
+        let address = document.getElementById('address') ;
+        // address.prepend(div);
+
+        // 2.再被選取的元素結尾插入內容 append() 置入被選取元素之中
+        address.append(div);
+
+        // 3.再被選取的元素之前插入內容 before() 置入被選取元素標籤之前
+        // address.before(div);
+
+        // 4.再被選取的元素之後插入內容 after() 置入被選取元素標籤之後
+        // address.after(div);
+    }
         
    
