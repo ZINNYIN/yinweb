@@ -77,7 +77,7 @@ header {
         }
     }
     > #menunav {
-        @include DN;
+        // @include DN;
         // 寬度 與高度(裝置的可是高度)
         width: $w1p * 10;
         height: $w1p * 10;
@@ -136,12 +136,13 @@ header {
                 height: 70px;
                 margin: {
                     bottom: 10px;
+                    top: 10px;
                 }
                 background-color: rgb(231, 30, 231);
             }
 
             > .itemtwo {
-                width: $w1p * 10 / 3;
+                width: $w1p * 10 / 3-5;
                 height: 90px;
                 margin: {
                     top: 10px;
