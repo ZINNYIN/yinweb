@@ -1,6 +1,6 @@
 #main {
     background-color: burlywood;
-
+    width: $w10 * 10;
     #banner {
         width: $w10 * 10;
         // 溢位設定，將超出的可視範圍給隱藏
@@ -48,6 +48,7 @@
             // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh
             padding-bottom: $imgpadding;
             background-color: rgb(115, 170, 110);
+
             li {
                 width: $w10 * 10;
                 float: left;
@@ -60,7 +61,8 @@
                 text-align: center;
                 // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh (會隨著裝置而改變) 800px*0.26=208px ;固定值 px
                 // 子框架的padding = 父框架的padding - 相差值 $differ
-                padding-bottom: $imgpadding - $differ;
+                // 修正高度
+                padding-bottom: $imgpadding ;
             }
             .item01 {
                 @include BPhoto(center, cover, banner, "005.jpg");

@@ -36,17 +36,10 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
         3、利用圖片高度撐開父框架的高
         */
     width: 100%;
-    background-color: #f1692a;
     position: fixed;
     top: 0;
     z-index: 999;
     background-color: blueviolet;
-  }
-  header > #mainnav #logo {
-    width: 85vw;
-  }
-  header > #mainnav #menubtn {
-    width: 15vw;
   }
   header > #mainnav #logo {
     float: left;
@@ -147,6 +140,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   #main {
     background-color: burlywood;
+    width: 100vw;
   }
   #main #banner {
     width: 100vw;
@@ -185,7 +179,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 335px;
   }
   #main #banner #imbox .item01 {
     width: 100vw;
@@ -562,7 +556,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 385px;
   }
   #main #banner #imbox .item01 {
     width: 100vw;
@@ -951,7 +945,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
-    top: 145px;
+    top: 227.5px;
     border-radius: 15px;
   }
   #main #banner .leftbtn {
@@ -965,7 +959,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main #banner #imbox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
+    padding-bottom: 550px;
     background-color: #73aa6e;
   }
   #main #banner #imbox li {
@@ -974,7 +968,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 550px;
   }
   #main #banner #imbox .item01 {
     width: 100vw;
@@ -1255,7 +1249,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     font-size: 1.2rem;
     position: absolute;
     z-index: 5;
-    top: 145px;
+    top: 277.5px;
     border-radius: 15px;
   }
   #main #banner .leftbtn {
@@ -1269,7 +1263,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main #banner #imbox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
+    padding-bottom: 650px;
     background-color: #73aa6e;
   }
   #main #banner #imbox li {
@@ -1278,7 +1272,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 650px;
   }
   #main #banner #imbox .item01 {
     width: 100vw;
@@ -1546,4 +1540,3 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */

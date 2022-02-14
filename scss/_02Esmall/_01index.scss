@@ -33,12 +33,12 @@ header {
 
         width: $w1p * 10;
         // 設定高度 單位為 % ( 未給予基準值，所以無法計算出實際高度 )
-        background-color: rgb(241, 105, 42);
+        // background-color: rgb(241, 105, 42);
         // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
         // 單位不同無法計算，所以改為同一位 vw
         // 引入的程式，執行結果為 logo 與 menubtn 的寬度，所以要寫在父框架(nav)
-        @include LBW(8, 5vw);
+        // @include LBW(8, 5vw);
 
         // 定位點 停佇
         position: fixed;

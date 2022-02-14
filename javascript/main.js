@@ -6,7 +6,7 @@
 
     // 新增 html 的標籤與內容
 
-    CopyRightContent ();
+    // CopyRightContent ();
 
     function CopyRightContent () {
         // 宣告變數 在 html 內新增 div 標籤
@@ -30,7 +30,7 @@
 
     // 新增 phonenav 的內容
 
-    phonenav();
+    // phonenav();
     function phonenav() {
         // 新增標籤 ul和 li
         let ul = document.createElement('ul');
@@ -73,7 +73,7 @@
     }
 
     // 行動裝置 選單
-    menunav();
+    // menunav();
     function menunav() {
         let  menunav = document.getElementById('menunav');
         // 隱藏 手機版選單

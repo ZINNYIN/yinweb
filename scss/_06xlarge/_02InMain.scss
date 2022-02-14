@@ -7,7 +7,7 @@
         position: relative;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
-        $imgpadding: 385px;
+        $imgpadding: 650px;
         // 父框架的padding 335px - 子框架的padding 250px = 相差值 $differ 85
         $differ: 90px;
 
@@ -54,7 +54,8 @@
                 text-align: center;
                 // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh (會隨著裝置而改變) 800px*0.26=208px ;固定值 px
                 // 子框架的padding = 父框架的padding - 相差值 $differ
-                padding-bottom: $imgpadding - $differ;
+                // 修正高度
+                padding-bottom: $imgpadding;
             }
             .item01 {
                 @include BPhoto(center, cover, banner, "005.jpg");
