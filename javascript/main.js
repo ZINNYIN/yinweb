@@ -1,3 +1,4 @@
+    CopyRightContent ();
 
     function TimeYear(){
     var year = new Date().getFullYear();
@@ -6,7 +7,7 @@
 
     // 新增 html 的標籤與內容
 
-    // CopyRightContent ();
+
 
     function CopyRightContent () {
         // 宣告變數 在 html 內新增 div 標籤
@@ -30,7 +31,7 @@
 
     // 新增 phonenav 的內容
 
-    // phonenav();
+    phonenav();
     function phonenav() {
         // 新增標籤 ul和 li
         let ul = document.createElement('ul');
@@ -69,7 +70,6 @@
             // 置入 陣列內容
             A.innertext = navcon[i];
         }
-
     }
 
     // 行動裝置 選單
@@ -81,6 +81,6 @@
     }
 
     // pageload();
-    // function pageload() {
-    //     $('header').load("../web/header.html");
-    // }
+    function pageload() {
+        $('header').load("web/header.html");
+    }
