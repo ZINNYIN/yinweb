@@ -43,7 +43,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   }
   header > #mainnav #logo {
     float: left;
-    background-color: #944e4e;
+    background-color: #d44141;
   }
   header > #mainnav #icon {
     display: none;
