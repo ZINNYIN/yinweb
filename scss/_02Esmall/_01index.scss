@@ -67,7 +67,7 @@ header {
             height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            background-color: aquamarine;
+            background-color: rgb(85, 216, 172);
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
             @include PoneMenu(center, contain, icon, "menu.svg");
@@ -110,8 +110,8 @@ header {
             // 高度
             height: 110px;
             text-align: center;
-            line-height: 110px;
-            background-color: springgreen;
+            // line-height: 110px;
+            
         }
         > ul {
             width: $w1p * 9;
