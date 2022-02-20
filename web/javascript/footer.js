@@ -26,7 +26,7 @@ function CopyRightContent () {
 }
 
     // 新增 phonenav 的內容
-phonenav();
+ phonenav();
 function phonenav() {
     // 新增標籤 ul和 li
     let ul = document.createElement('ul');
