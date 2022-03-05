@@ -102,7 +102,7 @@
             // 彈性佈局 (一行兩列欄)
             display: flex;
             flex-wrap: wrap;
-            > .lcommodity {
+            > .commodity {
                 // 寬度
                 width: $w1p * 4.5;
                 // 外間距
@@ -320,7 +320,7 @@
             // 主軸心(水平) 靠左--預設值，可以不給
             // justify-content: flex-start;
 
-            > .lcommodity {
+            > .commodity {
                 // 寬度
                 width: $w1p * 4.5;
                 // 外間距

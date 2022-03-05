@@ -127,7 +127,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    background-color: thistle;
+    background-color: #af96af;
   }
   footer div {
     text-align: center;
@@ -222,14 +222,14 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     top: 15px;
     bottom: 15px;
   }
-  #main > #great > article > .lcommodity {
+  #main > #great > article > .commodity {
     width: 90%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #great > article > .lcommodity > #titlebox {
+  #main > #great > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -241,50 +241,50 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > #titlebox > .title {
+  #main > #great > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #great > article > .lcommodity > #titlebox > .number {
+  #main > #great > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #great > article > .lcommodity > #titlebox .text {
+  #main > #great > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #great > article > .lcommodity > .images {
+  #main > #great > article > .commodity > .images {
     width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .images > a > img {
+  #main > #great > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox {
+  #main > #great > article > .commodity > .lnamebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 9px;
   }
-  #main > #great > article > .lcommodity > .lnamebox > h3 {
+  #main > #great > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #great > article > .lcommodity > .lnamebox > li {
+  #main > #great > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #great > article > .lcommodity > .brief {
+  #main > #great > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox {
+  #main > #great > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -292,27 +292,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice {
+  #main > #great > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #great > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #great > article > .lcommodity > #pricebox > .car {
+  #main > #great > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #great > .more {
@@ -340,17 +340,17 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     top: 15px;
     bottom: 15px;
   }
-  #main > #limited > article > .lcommodity {
+  #main > #limited > article > .commodity {
     width: 90vw;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #limited > article > .lcommodity > .null {
+  #main > #limited > article > .commodity > .null {
     height: 30px;
   }
-  #main > #limited > article > .lcommodity > #titlebox {
+  #main > #limited > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -362,50 +362,50 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .title {
+  #main > #limited > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .number {
+  #main > #limited > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox .text {
+  #main > #limited > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #limited > article > .lcommodity > .images {
+  #main > #limited > article > .commodity > .images {
     width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .images > a > img {
+  #main > #limited > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox {
+  #main > #limited > article > .commodity > .lnamebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > h3 {
+  #main > #limited > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > li {
+  #main > #limited > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #limited > article > .lcommodity > .brief {
+  #main > #limited > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > #pricebox {
+  #main > #limited > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -413,27 +413,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice {
+  #main > #limited > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #limited > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #limited > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #limited > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .car {
+  #main > #limited > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #limited > .more {
@@ -457,7 +457,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
 
 @media screen and (min-width: 576px) {
   header {
-    width: 100vw;
+    width: 100%;
   }
   header #mainnav {
     /*
@@ -605,14 +605,14 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #main > #great > article > .lcommodity {
+  #main > #great > article > .commodity {
     width: 45%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #great > article > .lcommodity > #titlebox {
+  #main > #great > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -624,49 +624,49 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > #titlebox > .title {
+  #main > #great > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #great > article > .lcommodity > #titlebox > .number {
+  #main > #great > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #great > article > .lcommodity > #titlebox .text {
+  #main > #great > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #great > article > .lcommodity > .images {
+  #main > #great > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .images > a > img {
+  #main > #great > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox {
+  #main > #great > article > .commodity > .lnamebox {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox > h3 {
+  #main > #great > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #great > article > .lcommodity > .lnamebox > li {
+  #main > #great > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #great > article > .lcommodity > .brief {
+  #main > #great > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
   }
-  #main > #great > article > .lcommodity > #pricebox {
+  #main > #great > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -674,27 +674,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice {
+  #main > #great > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #great > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #great > article > .lcommodity > #pricebox > .car {
+  #main > #great > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #great > .more {
@@ -733,14 +733,14 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #main > #limited > article > .lcommodity {
+  #main > #limited > article > .commodity {
     width: 45%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #limited > article > .lcommodity > #titlebox {
+  #main > #limited > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -752,50 +752,50 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .title {
+  #main > #limited > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .number {
+  #main > #limited > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox .text {
+  #main > #limited > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #limited > article > .lcommodity > .images {
+  #main > #limited > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .images > a > img {
+  #main > #limited > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox {
+  #main > #limited > article > .commodity > .lnamebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > h3 {
+  #main > #limited > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > li {
+  #main > #limited > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #limited > article > .lcommodity > .brief {
+  #main > #limited > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > #pricebox {
+  #main > #limited > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -803,27 +803,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice {
+  #main > #limited > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #limited > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #limited > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #limited > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #limited > article > .lcommodity > #pricebox > .car {
+  #main > #limited > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #limited > .more {
@@ -1013,7 +1013,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #great > article {
     width: 95%;
   }
-  #main > #great > article > .lcommodity {
+  #main > #great > article > .commodity {
     width: 30.33333%;
     margin-bottom: 20px;
     margin-left: 1.5%;
@@ -1022,7 +1022,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #great > article > .lcommodity > #titlebox {
+  #main > #great > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,50 +1034,50 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > #titlebox > .title {
+  #main > #great > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #great > article > .lcommodity > #titlebox > .number {
+  #main > #great > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #great > article > .lcommodity > #titlebox .text {
+  #main > #great > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #great > article > .lcommodity > .images {
+  #main > #great > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .images > a > img {
+  #main > #great > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox {
+  #main > #great > article > .commodity > .lnamebox {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox > h3 {
+  #main > #great > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #great > article > .lcommodity > .lnamebox > li {
+  #main > #great > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #great > article > .lcommodity > .brief {
+  #main > #great > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox {
+  #main > #great > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -1085,27 +1085,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice {
+  #main > #great > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #great > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #great > article > .lcommodity > #pricebox > .car {
+  #main > #great > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #great > .more {
@@ -1140,7 +1140,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
         flex-wrap: wrap;
     width: 95%;
   }
-  #main > #limited > article > .lcommodity {
+  #main > #limited > article > .commodity {
     width: 30.33333%;
     margin-bottom: 20px;
     margin-left: 1.5%;
@@ -1149,7 +1149,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #limited > article > .lcommodity > #titlebox {
+  #main > #limited > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1161,45 +1161,45 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .title {
+  #main > #limited > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .number {
+  #main > #limited > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox .text {
+  #main > #limited > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #limited > article > .lcommodity > .images {
+  #main > #limited > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .images > a > img {
+  #main > #limited > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox {
+  #main > #limited > article > .commodity > .lnamebox {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > h3 {
+  #main > #limited > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > li {
+  #main > #limited > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #limited > article > .lcommodity > .brief {
+  #main > #limited > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
@@ -1225,7 +1225,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #f12785;
   }
   footer address {
@@ -1317,7 +1317,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
   #main > #great > article {
     width: 95%;
   }
-  #main > #great > article > .lcommodity {
+  #main > #great > article > .commodity {
     width: 24%;
     margin-bottom: 20px;
     margin-left: 0.5%;
@@ -1326,7 +1326,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #great > article > .lcommodity > #titlebox {
+  #main > #great > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1338,50 +1338,50 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > #titlebox > .title {
+  #main > #great > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #great > article > .lcommodity > #titlebox > .number {
+  #main > #great > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #great > article > .lcommodity > #titlebox .text {
+  #main > #great > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #great > article > .lcommodity > .images {
+  #main > #great > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .images > a > img {
+  #main > #great > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #great > article > .lcommodity > .lnamebox {
+  #main > #great > article > .commodity > .lnamebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > .lnamebox > h3 {
+  #main > #great > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #great > article > .lcommodity > .lnamebox > li {
+  #main > #great > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #great > article > .lcommodity > .brief {
+  #main > #great > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
   }
-  #main > #great > article > .lcommodity > #pricebox {
+  #main > #great > article > .commodity > #pricebox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -1389,27 +1389,27 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     display: flex;
     padding-bottom: 10px;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice {
+  #main > #great > article > .commodity > #pricebox > .originalprice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .originalprice > span {
+  #main > #great > article > .commodity > #pricebox > .originalprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice {
     width: 40%;
     font-size: 1.2rem;
   }
-  #main > #great > article > .lcommodity > #pricebox > .bargainlprice > span {
+  #main > #great > article > .commodity > #pricebox > .bargainlprice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #main > #great > article > .lcommodity > #pricebox > .car {
+  #main > #great > article > .commodity > #pricebox > .car {
     width: 20%;
   }
   #main > #great > .more {
@@ -1443,7 +1443,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #main > #limited > article > .lcommodity {
+  #main > #limited > article > .commodity {
     width: 24%;
     margin-bottom: 20px;
     margin-left: 0.5%;
@@ -1452,7 +1452,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #main > #limited > article > .lcommodity > #titlebox {
+  #main > #limited > article > .commodity > #titlebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1464,45 +1464,45 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .title {
+  #main > #limited > article > .commodity > #titlebox > .title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox > .number {
+  #main > #limited > article > .commodity > #titlebox > .number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #main > #limited > article > .lcommodity > #titlebox .text {
+  #main > #limited > article > .commodity > #titlebox .text {
     width: 100%;
     text-align: right;
   }
-  #main > #limited > article > .lcommodity > .images {
+  #main > #limited > article > .commodity > .images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .images > a > img {
+  #main > #limited > article > .commodity > .images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox {
+  #main > #limited > article > .commodity > .lnamebox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > h3 {
+  #main > #limited > article > .commodity > .lnamebox > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #main > #limited > article > .lcommodity > .lnamebox > li {
+  #main > #limited > article > .commodity > .lnamebox > li {
     width: 20%;
     list-style-type: none;
   }
-  #main > #limited > article > .lcommodity > .brief {
+  #main > #limited > article > .commodity > .brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 15px;
@@ -1528,7 +1528,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #f00625;
     /*
     大平板裝置的 icon 與btnbox 取消 「隱藏模式」，但無法讀取。因為媒體判斷順序是由 小尺寸語法至大尺寸，故大尺寸沒有下違任何語法時，會直接判讀至小尺寸

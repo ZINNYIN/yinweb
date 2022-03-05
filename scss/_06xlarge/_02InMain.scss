@@ -105,7 +105,7 @@
             width: $w1p * 9.5;
             // 導讀 03small 02檔
 
-            > .lcommodity {
+            > .commodity {
                 // 寬度變數
                 $comw: $w1p * 10 / 4 - 1;
                 // 寬度
@@ -326,7 +326,7 @@
             // 彈性佈局 (一行兩列欄)
             display: flex;
             flex-wrap: wrap;
-            > .lcommodity {
+            > .commodity {
                 // 寬度變數
                 $comw: $w1p * 10 / 4 - 1;
                 // 寬度
