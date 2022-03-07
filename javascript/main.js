@@ -189,7 +189,7 @@ for(let i=0;i<8; i++){
                     div.setAttribute("class",dclass[i]);
                     }
 
-
+// ========================================================================
                     // images 內新增資料
                     let a = document.createElement('a');
                     // 新增連結屬性
@@ -259,7 +259,7 @@ for(let i=0;i<8; i++){
     }
 
     limitedcon(8);
-    // 新增 好物分享 的內容
+    // 新增 限量商品 的內容
     function limitedcon(number) {
         let i = number;
         let a = i+number;
@@ -271,6 +271,8 @@ for(let i=0;i<8; i++){
             for(let b = 0; b < dclass.length; b++ ){
                 new_class_tag('commodity',  'div', 'class', dclass[b], i);
             }
+
+            new_class_tag('images', 'a', 'href', 'javascript:;', i);
         }
         return;
     }
