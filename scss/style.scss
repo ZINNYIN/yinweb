@@ -1,4 +1,5 @@
 // 匯入檔案 @import
+@import url("https://cdn.jsdeliver.net/npm/boo");
 @import "_01joint.scss";
 
 // RWD 利用 媒體判斷來區分顯示裝置尺寸
@@ -7,11 +8,13 @@
     // 匯入檔案 @import
     @import "_02Esmall/_01index";
     @import "_02Esmall/_02InMain";
+    @import "_02Esmall/03pagination";
 }
 // 小裝置 >=576px min-width (最大寬度 含等於)
 @media screen and(min-width:576px) {
     @import "_03small/01index";
     @import "_03small/02InMain";
+    @import "_03small/03pagination";
 }
 // 平板裝置 >=768 medium min-width(最大寬度 含等於)
 @media screen and(min-width:768px) {

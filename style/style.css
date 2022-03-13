@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdeliver.net/npm/boo");
 * {
   margin: 0 auto;
   padding: 0;
@@ -453,6 +454,17 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     color: #fcfcfc;
     border-radius: 25px;
   }
+  #main > #great #pagination {
+    width: 90%;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #main > #great #pagination li {
+    color: aquamarine;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -842,6 +854,17 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     text-decoration: none;
     color: #fcfcfc;
     border-radius: 25px;
+  }
+  #main > #great #pagination {
+    width: 90%;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #main > #great #pagination li {
+    color: aquamarine;
   }
 }
 

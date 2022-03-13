@@ -1,0 +1,11 @@
+// 分頁設定
+#main > #great #pagination {
+    width: 90%;
+    height: 55px;
+    display: flex;
+    list-style-type: none;
+
+    li {
+        color: aquamarine;
+    }
+}
