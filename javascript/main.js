@@ -213,20 +213,21 @@ for(let i=0;i<8; i++){
                     let li = document.createElement('li');
                     // 屬性
                     li.setAttribute("class","love");
-                    // 在 lnamebox 新增 ; co在commodity(宣告在127行)
+                    // 在 lnamebox 新增 ; co在commodity(宣告在130行)
                     let lnamebox = co.querySelector('.lnamebox');
                     lnamebox.appendChild(h3).innerText = "商品名稱";
                     lnamebox.appendChild(li).innerText = "我的最愛";
 
-                    // 在 brief 內新增 html 資料 ; co在commodity(宣告在127行)
+                    // 在 brief 內新增 html 資料 ; co在commodity(宣告在130行)
                     let brief = co.querySelector('.brief');
                     brief.innerHTML = "商品簡介，文字內容超過26個字數 (<mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark>) ，會利用......設計";
 
 
             /* ==================價格============================*/
                    
-            // 新增標籤ul ; co 在 commodity(宣告在127行)
+            // 新增標籤ul ; co 在 commodity(宣告在130行)
             ul = document.createElement('ul');
+            ul.setAttribute("id", "pricebox");
             ul.setAttribute("class", "pricebox");
             // 建立ul
             co.appendChild(ul);
