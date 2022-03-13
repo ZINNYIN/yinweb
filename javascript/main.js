@@ -190,6 +190,7 @@ for(let i=0;i<8; i++){
                     }
 
 // ========================================================================
+                   
                     // images 內新增資料
                     let a = document.createElement('a');
                     // 新增連結屬性
@@ -214,8 +215,8 @@ for(let i=0;i<8; i++){
                     li.setAttribute("class","love");
                     // 在 lnamebox 新增 ; co在commodity(宣告在127行)
                     let lnamebox = co.querySelector('.lnamebox');
-                    lnamebox.appendChild(h3).innerText = "商品名稱";
-                    lnamebox.appendChild(li).innerText = "我的最愛";
+                    // lnamebox.appendChild(h3).innerText = "商品名稱";
+                    // lnamebox.appendChild(li).innerText = "我的最愛";
 
                     // 在 brief 內新增 html 資料 ; co在commodity(宣告在127行)
                     let brief = co.querySelector('.brief');
@@ -271,6 +272,25 @@ for(let i=0;i<8; i++){
             for(let b = 0; b < dclass.length; b++ ){
                 new_class_tag('commodity',  'div', 'class', dclass[b], i);
             }
+
+            let co = document.getElementsByClassName('commodity')[i];
+            // images 內新增資料
+            let a = document.createElement('a');
+            // 新增連結屬性
+            a.setAttribute("href","javascript:;");
+            let images = co.querySelector('.images');
+            // 在images 內新增
+            images.appendChild(a);
+
+            // images > a內新增資料
+            let img = document.createElement('img');
+            // 屬性
+            img.setAttribute("src","image/merchandise/001.jpg");
+            // 在 a 內新增
+            a.appendChild(img);
+
+
+
 
             new_class_tag('images', 'a', 'href', 'javascript:;', i);
         }
