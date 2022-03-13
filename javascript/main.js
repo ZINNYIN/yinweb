@@ -290,17 +290,14 @@ for(let i=0;i<8; i++){
             a.appendChild(img);
 
 
-            new_classtagcontent('lnamebox','h3',i,'商品名稱');
-            
+            let h3name = ['商品名稱1', '商品名稱2', '商品名稱3', '商品名稱4', '商品名稱5', 
+            '商品名稱6', '商品名稱7', '商品名稱8']
 
-            /*============方法2===========*/
-            //  // 指定在框架(自訂) 內新增標籤，宣告變數
-                // let ln = document.getElementsByClassName('lnamebox')[i];
-            // // 新增標籤 宣告變數
-                // let h3 = document.createElement('h3');
-            // //  在框架內建立標籤
-            // ln.appendChild(h3);
-            new_class_tag('lnamebox','li','class','love',i,'我的最愛');
+            new_classtagcontent('lnamebox','h3', i, h3name);
+            new_class_tagcontent('lnamebox','li','class','love',i,'我的最愛');
+
+            document.getElementsByClassName('brief')[i].innerHTML = "商品簡介，文字內容超過26個字數 (<mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark>) ，會利用......設計";
+
             
         }
         return;
@@ -339,8 +336,10 @@ for(let i=0;i<8; i++){
         let tagname = document.createElement(newtagname);
 
        //  在框架內建立標籤
-       boxtag.appendChild(tagname).innerHTML = content;
+        // boxtag.appendChild(tagname).innerHTML = content;
 
+        // i=8,b=0   8-8=0 ; i(8) - 8 =0  ,i(9) - 8 = 1
+        boxtag.appendChild(tagname).innerHTML = content[ i - 8 ];
     }
 
     // 給予 渲染框架 一個 id 屬性
@@ -358,8 +357,23 @@ for(let i=0;i<8; i++){
         tagname.setAttribute(idclass, idclassname);
     }
 
+     // 給予 渲染框架 一個 class 屬性
+     function new_class_tag(classname, newtagname, idclass, idclassname, i){
+        // 指定在框架(自訂) 內新增標籤，宣告變數
+        let boxtag = document.getElementsByClassName(classname)[i];
+
+        // 新增標籤 宣告變數
+        let tagname = document.createElement(newtagname);
+
+       //  在框架內建立標籤
+       boxtag.appendChild(tagname);
+
+       // 給予屬性
+       tagname.setAttribute(idclass, idclassname);
+   }
+
     // 給予 渲染框架 一個 class 屬性 給予內容
-    function new_class_tag(classname, newtagname, idclass, idclassname, i,content){
+    function new_class_tagcontent(classname, newtagname, idclass, idclassname, i,content){
         // 指定在框架(自訂) 內新增標籤，宣告變數
         let boxtag = document.getElementsByClassName(classname)[i];
 
