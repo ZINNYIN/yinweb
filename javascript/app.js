@@ -4,7 +4,7 @@ requirejs.config({
       "app": "../app"
     },
     "shim": {
-        "jquery.menumav": ["jquery"]
+        // "jquery.menumav": ["jquery"]
         // "jquery.beta": ["jquery"]
     }
 });
