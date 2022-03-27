@@ -5,7 +5,7 @@ let footercon = ["copyright"];
 define(indexcon, function($) {
     // 讀取 檔案內的 函式名稱
     $(function() {
-        phonemenushow2();
+        phonemenushow();
         CopyRightContent ();
         greatcon(8);
         limitedcon(8);

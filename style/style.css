@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://cdn.jsdeliver.net/npm/boo");
 * {
   margin: 0 auto;
   padding: 0;
@@ -162,6 +161,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     z-index: 5;
     top: 120px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #main #banner .leftbtn {
     left: 2.5vw;
@@ -551,6 +551,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     z-index: 5;
     top: 145px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #main #banner .leftbtn {
     left: 2.5vw;
@@ -975,6 +976,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     z-index: 5;
     top: 227.5px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #main #banner .leftbtn {
     left: 2.5vw;
@@ -1279,6 +1281,7 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     z-index: 5;
     top: 277.5px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #main #banner .leftbtn {
     left: 2.5vw;

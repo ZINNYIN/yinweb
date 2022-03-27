@@ -1,13 +1,13 @@
+let dclass = ['images','lnamebox','brief'];
 
 // 新增 限量商品 的內容
 function limitedcon(number) {
-    let dclass = ['images','lnamebox','brief'];
     let i = number;
     let a = i+number;
     // 在同一頁面中，會將相同名稱的 class 累加編號
     for( i; i < a; i++) {
         new_id_tag('limitedcon',  'section', 'class', 'commodity');
-        new_class_tag('commodity',  'p', 'class', 'null', i);
+        new_class_tag('commodity',  'p', 'class', 'null', i);  
 
         for(let b = 0; b < dclass.length; b++ ){
             new_class_tag('commodity',  'div', 'class', dclass[b], i);
@@ -25,7 +25,7 @@ function limitedcon(number) {
         // images > a內新增資料
         let img = document.createElement('img');
         // 屬性
-        img.setAttribute("src","../../image/merchandise/001.jpg");
+        img.setAttribute("src","image/merchandise/001.jpg");
         // 在 a 內新增
         a.appendChild(img);
 
@@ -42,3 +42,64 @@ function limitedcon(number) {
     }
     return;
 }
+
+
+// 給予 渲染框架 一個 id 屬性
+function new_id_tag(idname, newtagname, idclass, idclassname){
+    // 指定在框架(自訂) 內新增標籤，宣告變數
+    let boxtag = document.getElementById(idname);
+
+    // 新增標籤 宣告變數
+    let tagname = document.createElement(newtagname);
+
+   //  在框架內建立標籤
+   boxtag.appendChild(tagname);
+
+   // 給予屬性
+   tagname.setAttribute(idclass, idclassname);
+}
+
+// 給予 渲染框架 一個 class 屬性
+function new_class_tag(classname, newtagname, idclass, idclassname, i){
+   // 指定在框架(自訂) 內新增標籤，宣告變數
+   let boxtag = document.getElementsByClassName(classname)[i];
+
+   // 新增標籤 宣告變數
+   let tagname = document.createElement(newtagname);
+
+  //  在框架內建立標籤
+  boxtag.appendChild(tagname);
+
+  // 給予屬性
+  tagname.setAttribute(idclass, idclassname);
+}
+
+// 渲染框架 給予資料內容
+function new_classtagcontent(classname,newtagname,i,content){
+    // 指定在框架(自訂) 內新增標籤，宣告變數
+    let boxtag = document.getElementsByClassName(classname)[i];
+
+    // 新增標籤 宣告變數
+    let tagname = document.createElement(newtagname);
+
+   //  在框架內建立標籤
+    // boxtag.appendChild(tagname).innerHTML = content;
+
+    // i=8,b=0   8-8=0 ; i(8) - 8 =0  ,i(9) - 8 = 1
+    boxtag.appendChild(tagname).innerHTML = content[ i - 8 ];
+}
+
+// 給予 渲染框架 一個 class 屬性 給予內容
+function new_class_tagcontent(classname, newtagname, idclass, idclassname, i,content){
+    // 指定在框架(自訂) 內新增標籤，宣告變數
+    let boxtag = document.getElementsByClassName(classname)[i];
+
+    // 新增標籤 宣告變數
+    let tagname = document.createElement(newtagname);
+
+   //  在框架內建立標籤
+   boxtag.appendChild(tagname).innerHTML = content;
+
+   // 給予屬性
+   tagname.setAttribute(idclass, idclassname);
+}    

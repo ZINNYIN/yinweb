@@ -1,6 +1,6 @@
 // 控制按鈕開關
-
-    function phonemenushow2() {
+phonemenushow();
+    function phonemenushow() {
         // $jQuery 的變數前綴詞
         // 隱藏選單
         $('#menunav').hide();

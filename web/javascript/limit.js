@@ -8,10 +8,8 @@ let dclass = ['images','lnamebox','brief'];
 limitedcon(8);
 // 新增 限量商品 的內容
 function limitedcon(number) {
-    let i = number;
-    let a = i+number;
     // 在同一頁面中，會將相同名稱的 class 累加編號
-    for( i; i < a; i++) {
+    for( let i = 0; i < number; i++) {
         new_id_tag('limitedcon',  'section', 'class', 'commodity');
         new_class_tag('commodity',  'p', 'class', 'null', i);
 
@@ -31,7 +29,7 @@ function limitedcon(number) {
         // images > a內新增資料
         let img = document.createElement('img');
         // 屬性
-        img.setAttribute("src","image/merchandise/001.jpg");
+        img.setAttribute("src","../image/merchandise/001.jpg");
         // 在 a 內新增
         a.appendChild(img);
 
@@ -131,5 +129,3 @@ function new_class_tagcontent(classname, newtagname, idclass, idclassname, i,con
    // 給予屬性
    tagname.setAttribute(idclass, idclassname);
 }    
-
- 

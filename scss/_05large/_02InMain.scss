@@ -26,6 +26,8 @@
             // 左右按鈕，物件往下推算高度: (物件的父框架的高/2)-(按鈕高度/2)+單位
             top: ($imgpadding / 2) - (95 / 2);
             @include rounded(15);
+            // 滑鼠樣式  手型
+            cursor: pointer;
         }
         .leftbtn {
             left: 2.5vw;
@@ -55,7 +57,7 @@
                 // 內間距設定 下方間距，當成圖片的高度，單位為 % or vh (會隨著裝置而改變) 800px*0.26=208px ;固定值 px
                 // 子框架的padding = 父框架的padding - 相差值 $differ
                 // 修正高度
-                padding-bottom: $imgpadding ;
+                padding-bottom: $imgpadding;
             }
             .item01 {
                 @include BPhoto(center, cover, banner, "005.jpg");

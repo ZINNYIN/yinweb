@@ -1,5 +1,5 @@
 // 指定圖片路徑 陣列
-let image = ['image/banner/001.jpeg', 'image/banner/002.jpg', 'image/banner/003.jpg', 'image/banner/004.jpg', 'image/banner/005.jpg'];
+let image = ['image/banner/001.jpg', 'image/banner/002.jpg', 'image/banner/003.jpg', 'image/banner/004.jpg', 'image/banner/005.jpg'];
 
 // 變數 紀錄目前正在顯示第幾張圖片 ， 儲存著圖片對應的索引編號
 let current = 0;
