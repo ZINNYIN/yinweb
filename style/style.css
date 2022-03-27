@@ -17,6 +17,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: brown;
+}
+
 /*
 文字尺寸 單位 px(固定值) em(百分比，會疊加父框架設定的值)  rem (百分比，不會疊加父框架設定的值）
 em 基礎為 1em=16px ; rem基礎為 1rem=16px
@@ -463,7 +468,8 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     list-style-type: none;
   }
   #main > #great #pagination li {
-    color: aquamarine;
+    color: #aa0544;
+    font-weight: 600;
   }
 }
 
@@ -864,7 +870,8 @@ em 基礎為 1em=16px ; rem基礎為 1rem=16px
     list-style-type: none;
   }
   #main > #great #pagination li {
-    color: aquamarine;
+    color: #aa0544;
+    font-weight: 600;
   }
 }
 
