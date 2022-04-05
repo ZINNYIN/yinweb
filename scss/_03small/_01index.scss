@@ -36,7 +36,7 @@ header {
         // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
         // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
 
-        background-color: rgb(173, 255, 20);
+        background-color: rgba(180, 83, 83, 0.808);
 
         // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
         // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
@@ -53,7 +53,7 @@ header {
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
 
-            background-color: aqua;
+            // background-color: aqua;
         }
         #icon {
             // 呼叫混合函式

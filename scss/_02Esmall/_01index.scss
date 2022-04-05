@@ -19,7 +19,7 @@
 header {
     // 寬度 100%;
     width: $w1p * 10;
-    background-color: violet;
+    background-color: rgb(130, 137, 238);
     > #mainnav {
         /*
         浮動對齊的問題float
@@ -45,14 +45,15 @@ header {
         // 靠上
         top: 0;
         z-index: 999;
-        background-color: blueviolet;
+        background-color: rgba(180, 83, 83, 0.808);
 
         // 靠左排列(與menubtn同一行)
         #logo {
             // 寬度 % or vw ( 螢幕可視裝置寬度的百分比 )
             // width: $w10 * 8 + 5%;
             float: left;
-            background-color: rgb(212, 65, 65);
+            // background-color: rgb(212, 65, 65);
+            
         }
         #icon {
             // 呼叫 混合函式

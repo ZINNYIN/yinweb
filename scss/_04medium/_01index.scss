@@ -22,7 +22,7 @@ header {
     // 寬度100%
     width: $w10 * 10;
 
-    background-color: rgb(39, 17, 240);
+    background-color: rgb(255, 250, 253);
     > #mainnav {
         /*
     浮動對齊的問題float
@@ -37,7 +37,7 @@ header {
         // 設定高度 單位% (未給予基準值，所以無法計算出實際高度)
         // vh (螢幕可視範圍高度的百分比，計算出實際高度; 依照裝置高度計算)
 
-        background-color: deeppink;
+        background-color: rgba(180, 83, 83, 0.808);
 
         // 解決方法一: 給予高度; 二擇一，寫入 header或是nav
         // 解決方式二: 清除浮動框架，由nav 設定 (寫在第53行)
@@ -48,9 +48,10 @@ header {
 
             // 浮點對齊法: 靠左對齊 float:left
             float: left;
-
-            background-color: rgb(183, 0, 255);
+            
+            // background-color: rgb(183, 0, 255);
         }
+        
         #icon {
             // 呼叫混合函式
             @include DN;
